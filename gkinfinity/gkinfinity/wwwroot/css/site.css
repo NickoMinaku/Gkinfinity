@@ -1,0 +1,187 @@
+/*Imports*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&family=Yeseva+One&display=swap');
+
+@font-face {
+    font-family: 'Aqum Two';
+    src: url('/Aqum 2 Classic.otf');
+}
+
+/*Styleguide*/
+
+/*Variables*/
+:root{
+    /*Colors*/
+    --black: rgba(0, 0, 0, 1);
+    --white: rgba(255, 255, 255, 1);
+    /*Fonts*/
+    --font-aqum: "Aqum Two";
+    --font-raleway: "Raleway";
+    --font-yeseva_one: "Yeseva One";
+}
+
+/*Classes*/
+.raleway-800fw-32px-black{
+    color: var(--black);
+    font-family: var(--font-raleway);
+    font-size: 32px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.raleway-900fw-50px-black {
+    color: var(--black);
+    font-family: var(--font-raleway) !important;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.yesevaone-400fw-20px-black {
+    color: var(--black);
+    font-family: var(--font-yeseva_one);
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aqum-400fw-50px-white {
+    color: var(--white);
+    font-family: var(--font-aqum);
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Styles*/
+
+html {
+    position: relative;
+    min-height: 100%;
+    
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.hidden{
+    pointer-events: none;
+    display: none;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 21.094vw;
+}
+
+.main-screen-header {
+    position: relative;
+    width: 1110px;
+    height: 125px;
+    background: linear-gradient(91.63deg, #9492FF 11.31%, #2C2A8F 89.16%);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.header-text {
+    position: absolute;
+    width: 666px;
+    height: 110px;
+    left: 223px;
+    top: 7px;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+}
+
+.phone-icon {
+    position: absolute;
+    left: 677px;
+    top: 80px;
+}
+
+.phone-number {
+    position: absolute;
+    width: 183px;
+    height: 23px;
+    left: 705px;
+    top: 79px;
+    font-size: 18px;
+}
+
+.phone-number a {
+    text-decoration: none;
+    color: white;
+}
+
+.phone-number a:hover{
+    text-decoration:underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.main-screen-headline{
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+.business-block {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-flow: wrap;
+    gap: 38px;
+    row-gap: 50px;
+    overflow: hidden;
+    padding: 50px 50px;
+    width: 1110px;
+    height: 658px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.business-block-element {
+    width: 485px;
+    height: 254px;
+    border-radius: 10px;
+}
+
+.business-block-item1 {
+    background: linear-gradient(180deg, #FFDDAD 0%, #FEFAAF 100%);
+}
+
+.business-block-item2 {
+    background: linear-gradient(180deg, #F9BBF9 0%, #FFF3FF 100%);
+}
+
+.business-block-item3 {
+    background: linear-gradient(180deg, #6E6E6E 0%, #FBFBFB 100%);
+}
+
+.business-block-item4 {
+    background: linear-gradient(180deg, #4595E6 0%, #E1F6FD 100%);
+}
+
+.business-block-item1:hover {
+    filter: drop-shadow(0px 0px 10px #FFDFAE);
+    transition: filter ease-in-out 100ms;
+}
+
+.business-block-item2:hover {
+    filter: drop-shadow(0px 0px 10px #FAC0FA);
+    transition: filter ease-in-out 100ms;
+}
+
+.business-block-item3:hover {
+    filter: drop-shadow(0px 0px 10px #737373);
+    transition: filter ease-in-out 100ms;
+}
+
+.business-block-item4:hover {
+    filter: drop-shadow(0px 0px 10px #4B99E7);
+    transition: filter ease-in-out 100ms;
+}
