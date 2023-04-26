@@ -1,0 +1,417 @@
+/*Imports*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&family=Yeseva+One&display=swap');
+
+@font-face {
+    font-family: 'Aqum Two';
+    src: url('/Aqum 2 Classic.otf');
+}
+
+/*Styleguide*/
+
+/*Variables*/
+:root{
+    /*Colors*/
+    --black: rgba(0, 0, 0, 1);
+    --white: rgba(255, 255, 255, 1);
+    /*Fonts*/
+    --font-aqum: "Aqum Two";
+    --font-raleway: "Raleway";
+    --font-yeseva_one: "Yeseva One";
+}
+
+/*Classes*/
+.raleway-800fw-32px-black{
+    color: var(--black);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.raleway-900fw-50px-black {
+    color: var(--black);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.raleway-900fw-20px-white {
+    color: var(--white);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.raleway-900fw-32px-black {
+    color: var(--black);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.raleway-600fw-24px-black {
+    color: var(--black);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.yesevaone-400fw-20px-black {
+    color: var(--black);
+    font-family: var(--font-yeseva_one), Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aqum-400fw-50px-white {
+    color: var(--white);
+    font-family: var(--font-aqum), Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Styles*/
+
+h1{
+    all: unset;
+}
+
+h2{
+    all: unset;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.hidden{
+    pointer-events: none;
+    display: none;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 21.094vw;
+}
+
+.main-screen-header {
+    position: relative;
+    width: 1110px;
+    height: 125px;
+    background: linear-gradient(91.63deg, #9492FF 11.31%, #2C2A8F 89.16%);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.header-text {
+    position: absolute;
+    width: 666px;
+    height: 110px;
+    left: 223px;
+    top: 7px;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+}
+
+.phone-icon {
+    position: absolute;
+    left: 677px;
+    top: 80px;
+}
+
+.phone-number {
+    position: absolute;
+    width: 183px;
+    height: 23px;
+    left: 705px;
+    top: 79px;
+    font-size: 18px;
+}
+
+.phone-number a {
+    text-decoration: none;
+    color: white;
+}
+
+.phone-number a:hover{
+    text-decoration:underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.main-screen-headline{
+    display: block;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+.business-block {
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-flow: wrap;
+    row-gap: 50px;
+    overflow: hidden;
+    padding: 50px 50px;
+    width: 1110px;
+    height: 658px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.business-block-element {
+    all: unset;
+    display: block;
+    width: 485px;
+    height: 254px;
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+}
+
+.business-block-item1 {
+    background: linear-gradient(180deg, #FFDDAD 0%, #FEFAAF 100%);
+}
+
+.business-block-item2 {
+    background: linear-gradient(180deg, #F9BBF9 0%, #FFF3FF 100%);
+}
+
+.business-block-item3 {
+    background: linear-gradient(180deg, #6E6E6E 0%, #FBFBFB 100%);
+}
+
+.business-block-item4 {
+    background: linear-gradient(180deg, #4595E6 0%, #E1F6FD 100%);
+}
+
+.business-block-item1:hover {
+    filter: drop-shadow(0px 0px 10px #FFDFAE);
+    transition: filter ease-in-out 100ms;
+}
+
+.business-block-item2:hover {
+    filter: drop-shadow(0px 0px 10px #FAC0FA);
+    transition: filter ease-in-out 100ms;
+}
+
+.business-block-item3:hover {
+    filter: drop-shadow(0px 0px 10px #737373);
+    transition: filter ease-in-out 100ms;
+}
+
+.business-block-item4:hover {
+    filter: drop-shadow(0px 0px 10px #4B99E7);
+    transition: filter ease-in-out 100ms;
+}
+
+.semki-logo {
+    margin-left: 28px;
+    margin-top: 26px;
+    width: 339px;
+    height: 104px;
+}
+
+.goldencat-logo {
+    margin-left: 28px;
+    margin-top: 18px;
+    width: 186px;
+    height: 112px;
+}
+
+.magnum-logo {
+    margin-left: 28px;
+    margin-top: 26px;
+    width: 262px;
+    height: 104px;
+}
+
+.lifewater-logo {
+    margin-left: 28px;
+    margin-top: 26px;
+    width: 148px;
+    height: 104px;
+}
+
+.business-block-element p{
+    margin-top: 26px;
+    margin-left: 28px;
+}
+
+.main-screen-p{
+    text-align: justify;
+    display: block;
+    width: 1110px;
+}
+
+.news-bubble{
+    display: block;
+    position:relative;
+    width: 530px;
+    height: 90px;
+    overflow: visible;
+}
+
+.news-bubble-text{
+    line-height: 22px;
+    position:absolute;
+    text-align:justify;
+    display:block;
+    width: 506px;
+    height: 62px;
+    top: 12px;
+    left: 12px;
+    letter-spacing: 0.02em;
+}
+
+.news-bubble-text:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.news-bubble:first-of-type .arrow-right{
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 290px;
+    z-index: 1;
+}
+
+.news-wrapper{
+    display:flex;
+    align-content:space-between;
+    column-gap: 50px;
+}
+
+.news-bubble:last-of-type .arrow-right {
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 98px;
+    z-index: 1;
+}
+
+.youtube-video{
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.youtube-big-player{
+    margin-top: 55px;
+    border-radius: 10px;
+}
+
+.videos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-screen-footer {
+    position: relative;
+    width: 1110px;
+    height: 125px;
+    margin-top: 90px;
+    background: linear-gradient(180deg, #000000 0%, #383A42 100%);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.schedule-button {
+    all: unset;
+    margin-top: 43px;
+    margin-left: 94px;
+    width: 407px;
+    height: 46px;
+}
+
+.schedule-button::before {
+    content: url(/img/Schedule-button-white.svg);
+}
+
+.schedule-button:hover::before{
+    content: url(/img/Schedule-button-black.svg);
+}
+
+.footer-adress{
+    position: absolute;
+    display: block;
+    width: 514px;
+    margin: 0;
+    top: 44px;
+    left: 541px;
+}
+
+.main-screen-footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-screen-footer a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+#schedule-popup {
+    width: 953px;
+    height: 326px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#schedule-popup p{
+    display: block;
+    margin: 0;
+    width: 877px;
+    height: 168px;
+    text-align: justify;
+    margin-top: 93px;
+    margin-left: 38px;
+    letter-spacing: 0.02em;
+}
+
+#dark-overlay {
+    z-index: 37;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+#main-screen-popup-cross {
+    position: absolute;
+    top: 38px;
+    left: 900px;
+    cursor: pointer;
+    display: block;
+}
