@@ -1,14 +1,15 @@
 ﻿using gkinfinity.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using gkinfinity.Services;
 
 namespace gkinfinity.Controllers
 {
-    public class HomeController : Controller
+    public class MainController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<MainController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public MainController(ILogger<MainController> logger)
         {
             _logger = logger;
         }
@@ -16,6 +17,17 @@ namespace gkinfinity.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult SemkiITochka()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult SendRequest(SendRequestModel sendrequest)
+        {
+            return Content(sendrequest.Name);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

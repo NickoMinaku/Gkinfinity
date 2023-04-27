@@ -21,6 +21,15 @@
 }
 
 /*Classes*/
+
+.raleway-900fw-18px-black {
+    color: var(--black);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+}
+
 .raleway-800fw-32px-black{
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
@@ -78,6 +87,10 @@
 }
 
 /*Styles*/
+
+.decor-none {
+    text-decoration: none;
+}
 
 h1{
     all: unset;
@@ -189,18 +202,22 @@ body {
 
 .business-block-item1 {
     background: linear-gradient(180deg, #FFDDAD 0%, #FEFAAF 100%);
+    cursor: pointer;
 }
 
 .business-block-item2 {
     background: linear-gradient(180deg, #F9BBF9 0%, #FFF3FF 100%);
+    cursor: pointer;
 }
 
 .business-block-item3 {
     background: linear-gradient(180deg, #6E6E6E 0%, #FBFBFB 100%);
+    cursor: pointer;
 }
 
 .business-block-item4 {
     background: linear-gradient(180deg, #4595E6 0%, #E1F6FD 100%);
+    cursor: pointer;
 }
 
 .business-block-item1:hover {
@@ -348,6 +365,7 @@ body {
 
 .schedule-button:hover::before{
     content: url(/img/Schedule-button-black.svg);
+    cursor: pointer;
 }
 
 .footer-adress{
@@ -409,6 +427,54 @@ body {
 }
 
 #main-screen-popup-cross {
+    position: absolute;
+    top: 38px;
+    left: 900px;
+    cursor: pointer;
+    display: block;
+}
+
+.semki-nav{
+    white-space:nowrap;
+    position: absolute;
+    top: 60px;
+    left: 1164px;
+}
+
+.send-request{
+    cursor: pointer;
+    margin-left: 36px;
+}
+
+#send-request-form {
+    width: 953px;
+    height: 685px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#dark-overlay-semki {
+    z-index: 37;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+#semki-popup-cross {
     position: absolute;
     top: 38px;
     left: 900px;
