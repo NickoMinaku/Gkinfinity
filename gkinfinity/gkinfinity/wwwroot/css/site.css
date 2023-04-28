@@ -1,6 +1,6 @@
 /*Imports*/
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&family=Roboto:wght@900&family=Yeseva+One&display=swap');
 
 @font-face {
     font-family: 'Aqum Two';
@@ -15,12 +15,21 @@
     --black: rgba(0, 0, 0, 1);
     --white: rgba(255, 255, 255, 1);
     /*Fonts*/
+    --font-roboto: "Roboto";
     --font-aqum: "Aqum Two";
     --font-raleway: "Raleway";
     --font-yeseva_one: "Yeseva One";
 }
 
 /*Classes*/
+
+.roboto-900fw-26px-black {
+    color: var(--black);
+    font-family: var(--font-roboto), Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    font-style: normal;
+}
 
 .raleway-900fw-18px-black {
     color: var(--black);
@@ -48,6 +57,14 @@
 
 .raleway-900fw-20px-white {
     color: var(--white);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.raleway-900fw-20px-black {
+    color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
     font-size: 20px;
     font-weight: 900;
@@ -480,4 +497,104 @@ body {
     left: 900px;
     cursor: pointer;
     display: block;
+}
+
+.form-inputs{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    top: 172px;
+    left: 38px;
+    width: 877px;
+    height: 229px;
+}
+
+.form-inputs #name,#phone,#city{
+    box-sizing: border-box;
+    padding: 0;
+    width: 515px;
+    height: 59px;
+    margin-bottom: 26px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.form-inputs #name:focus, #phone:focus, #city:focus {
+    outline: none;
+}
+
+.form-inputs .inputs{
+    width: 515px;
+    height: 229px;
+}
+
+.form-inputs label{
+    display: inline-block;
+    width: 293px;
+    margin-bottom: 50px;
+    line-height: 35px;
+}
+
+.form-inputs .labels{
+    padding-top: 10px;
+}
+
+#agreement {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+#agreement+label{
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#agreement+label::before{
+    content: '';
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60% 60%;
+}
+
+#agreement:checked+label::before{
+  background-image: url(/img/mark.svg);
+}
+
+.agreement-div {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 473px;
+    left: 28px;
+}
+
+.send-request-button {
+    position: absolute;
+    top: 567px;
+    left: 239px;
+    width: 455px;
+    height: 97px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.send-request-button:hover {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    top: 570px;
 }

@@ -25,9 +25,11 @@ namespace gkinfinity.Controllers
         }
 
         [HttpPost]
-        public IActionResult SendRequest(SendRequestModel sendrequest)
+        public async Task<IActionResult> SendRequest(SendRequestModel sendrequest, string subject)
         {
-            return Content(sendrequest.Name);
+            MailSendRequest sendRequest = new MailSendRequest();
+            await sendRequest.SendEmailAsync(subject, sendrequest);
+            return RedirectToAction("SemkiITochka");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

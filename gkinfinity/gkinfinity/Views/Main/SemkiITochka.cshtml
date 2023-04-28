@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Semki I Tochka";
+}
+
+<div class="semki-nav"><a class="decor-none raleway-900fw-18px-black" href="tel:+79326200050">8 (932) 620-00-50</a> <a class="send-request decor-none raleway-900fw-18px-black">Оставить заявку!</a></div>
+<div id="send-request-form">
+    <img id="semki-popup-cross" class="cross-icon" src="/img/cross-icon.svg" />
+    <form method="post" action="SendRequest">
+        <div class="form-inputs">
+            <input type="hidden" name="subject" value="@ViewData["Title"]" />
+            <div class="labels">
+                <label class="form-label raleway-900fw-32px-black" for="name">Ваше имя:</label>
+                <label class="form-label raleway-900fw-32px-black" for="phone">Номер телефона:</label>
+                <label class="form-label raleway-900fw-32px-black" for="city">Город:</label>
+            </div>
+            <div class="inputs">
+                <input class="roboto-900fw-26px-black" type="text" id="name" name="sendrequest.Name" />
+                <input class="roboto-900fw-26px-black" type="text" id="phone" name="sendrequest.PhoneNumber" />
+                <input class="roboto-900fw-26px-black" type="text" id="city" name="sendrequest.City" />
+            </div>
+        </div>
+        <div class="agreement-div">
+            <input id="agreement" type="checkbox" />
+            <label for="agreement"></label>
+            <p class="raleway-900fw-20px-black">Даю согласие на обработку <a>персональных данных</a></p>
+        </div>
+        <button class="raleway-900fw-32px-black send-request-button" type="submit">
+            Оставить заявку!
+        </button>
+    </form>
+</div>
+<div id="dark-overlay-semki"></div>
