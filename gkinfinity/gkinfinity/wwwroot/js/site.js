@@ -33,3 +33,42 @@ $(document).ready(function () {
         });
     });
 });
+
+class Accordion {
+    constructor(el) {
+        this.el = el;
+        this.isAnimating = false;
+        $(el).click(function (event) {
+            event.preventDefault();
+            if (this.className == "semki-details raleway-900fw-20px-black off" && !this.isAnimating) {
+                $(this).toggleClass("off");
+                $(this).toggleClass("on");
+                this.isAnimating = true;
+                $(this).animate({
+                height: `${$(this).get(0).scrollHeight + 25}px`
+                }, "slow", function () {
+                    this.isAnimating = false;
+            });
+            }
+            else if (this.className == "semki-details raleway-900fw-20px-black on" && !this.isAnimating) {
+                event.preventDefault();
+                $(this).toggleClass("off");
+                $(this).toggleClass("on");
+                this.isAnimating = true;
+                $(this).animate({
+                    height: "50px"
+                }, "slow", function () {
+                    this.isAnimating = false;
+                });
+            }
+
+            
+        });
+
+        
+    }
+}
+
+document.querySelectorAll('.semki-details').forEach(el => {
+    new Accordion(el)
+})
