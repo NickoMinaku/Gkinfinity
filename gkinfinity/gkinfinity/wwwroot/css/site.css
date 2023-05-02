@@ -1,6 +1,6 @@
 /*Imports*/
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&family=Roboto:wght@900&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&family=Roboto:wght@900&family=Yeseva+One&family=Amatic+SC&display=swap');
 
 @font-face {
     font-family: 'Aqum Two';
@@ -10,7 +10,7 @@
 /*Styleguide*/
 
 /*Variables*/
-:root{
+:root {
     /*Colors*/
     --black: rgba(0, 0, 0, 1);
     --white: rgba(255, 255, 255, 1);
@@ -19,6 +19,7 @@
     --font-aqum: "Aqum Two";
     --font-raleway: "Raleway";
     --font-yeseva_one: "Yeseva One";
+    --font-amatic: "Amatic SC";
 }
 
 /*Classes*/
@@ -28,6 +29,30 @@
     font-family: var(--font-roboto), Arial, sans-serif;
     font-size: 26px;
     font-weight: 900;
+    font-style: normal;
+}
+
+.amatic-400fw-50px-black {
+    color: var(--black);
+    font-family: var(--font-amatic), Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-500fw-18px-black {
+    color: var(--black);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.raleway-400fw-20px-black {
+    color: var(--black);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -815,5 +840,243 @@ body {
     display: flex;
     justify-content: space-between;
     width: 1110px;
-    height: 192px;
+    height: 175px;
+}
+
+.semki-spend-item{
+    width: 215px;
+    height: 175px;
+    text-align: center;
+}
+
+.semki-spend-item p{
+    margin-top: 15px;
+}
+
+.semki-spend-block + p {
+    margin-left: auto;
+    margin-top: 52px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.semki-spend-block + p + h2{
+    white-space: normal;
+    width: 1000px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.semki-money-block{
+    display: flex;
+    justify-content: space-between;
+    width: 920px;
+    height: 243px;
+}
+
+.semki-money-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 255px;
+    height: 243px;
+    border: 1px solid #000000;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.semki-money-item img{
+    margin-top: 20px;
+    max-width: 79px;
+}
+
+.semki-money-item:last-of-type img{
+    margin-top: 17px;
+    margin-left: 5px;
+    max-width: 87px;
+}
+
+.semki-money-item p{
+    margin-top: 40px;
+}
+
+.semki-money-item p:last-of-type{
+    margin-top: 20px;
+}
+
+.semki-money-item:hover{
+    margin-top: 3px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+#spend-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 245px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#stonk-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 953px;
+    height: 225px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#clear-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 750px;
+    height: 290px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#spend-popup h2, #spend-popup p {
+    display: block;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#spend-popup h2 {
+    line-height: 15px;
+}
+
+#spend-popup img {
+    top: 38px;
+    left: 390px;
+}
+
+#stonk-popup h2, #stonk-popup p {
+    display: block;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#stonk-popup h2 {
+    line-height: 15px;
+}
+
+#stonk-popup img {
+    top: 38px;
+    left: 895px;
+}
+
+#clear-popup h2, #clear-popup p {
+    display: block;
+    max-width: 700px;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#clear-popup h2 {
+    line-height: 15px;
+}
+
+#clear-popup img {
+    top: 38px;
+    left: 690px;
+}
+
+.send-request2 {
+    margin-left: 0;
+    margin-top: 132px;
+    box-sizing: border-box;
+    width: 350px;
+    height: 66px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 23px;
+}
+
+.send-request2:hover{
+    text-decoration: none;
+    transform:translateY(3px);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.how-semki {
+    position: absolute;
+    text-align: center;
+    left: -95px;
+    top: 4159px;
+    width: 230px;
+    height: 110px;
+    letter-spacing: 0.02em;
+    line-height: 55px;
+    transform: rotate(-30.98deg);
+    cursor: default;
+}
+
+.process-semki {
+    position: absolute;
+    text-align: center;
+    top: 4145px;
+    left: 972px;
+    width: 248px;
+    height: 98px;
+    letter-spacing: 0.02em;
+    line-height: 55px;
+    transform: rotate(30.98deg);
+    cursor: default;
+}
+
+.semki-arrow {
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    top: 4350px;
+    left: -44px;
+}
+
+.semki-arrow2{
+    position: absolute;
+    top: 4330px;
+    left: 1041px;
+}
+
+.semki-video {
+    box-sizing: border-box;
+    margin-top: 81px;
+    border: 1px solid #000000;
+    border-radius: 10px;
 }

@@ -34,6 +34,60 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $("div.semki-money-item:first-of-type").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#spend-popup")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#spend-popup").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $("div.semki-money-item:first-of-type + .semki-money-item").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#stonk-popup")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#stonk-popup").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $("div.semki-money-item:first-of-type + .semki-money-item + .semki-money-item").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#clear-popup")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#clear-popup").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
 class Accordion {
     constructor(el) {
         this.el = el;
@@ -46,7 +100,7 @@ class Accordion {
                 this.isAnimating = true;
                 $(this).animate({
                 height: `${$(this).get(0).scrollHeight + 25}px`
-                }, "slow", function () {
+                }, "fast", function () {
                     this.isAnimating = false;
             });
             }
@@ -57,7 +111,7 @@ class Accordion {
                 this.isAnimating = true;
                 $(this).animate({
                     height: "50px"
-                }, "slow", function () {
+                }, "fast", function () {
                     this.isAnimating = false;
                 });
             }
