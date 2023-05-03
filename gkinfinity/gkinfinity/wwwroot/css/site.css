@@ -867,6 +867,7 @@ body {
 }
 
 .semki-money-block{
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 920px;
@@ -1037,21 +1038,22 @@ body {
 .how-semki {
     position: absolute;
     text-align: center;
-    left: -95px;
-    top: 4159px;
+    left: -195px;
+    top: 375px;
     width: 230px;
     height: 110px;
     letter-spacing: 0.02em;
     line-height: 55px;
     transform: rotate(-30.98deg);
     cursor: default;
+    z-index: 50;
 }
 
 .process-semki {
     position: absolute;
     text-align: center;
-    top: 4145px;
-    left: 972px;
+    top: 375px;
+    left: 877px;
     width: 248px;
     height: 98px;
     letter-spacing: 0.02em;
@@ -1062,21 +1064,68 @@ body {
 
 .semki-arrow {
     position: absolute;
-    width: 73px;
-    height: 73px;
-    top: 4350px;
-    left: -44px;
+    top: 570px;
+    left: -145px;
 }
 
-.semki-arrow2{
+.semki-arrow2 {
     position: absolute;
-    top: 4330px;
-    left: 1041px;
+    top: 570px;
+    left: 965px;
 }
 
 .semki-video {
+    position: relative;
     box-sizing: border-box;
     margin-top: 81px;
     border: 1px solid #000000;
     border-radius: 10px;
+}
+
+.semki-price-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1016px;
+    height: 160px;
+    margin-top: 90px;
+}
+
+.semki-price-block div{
+    display: flex;
+    flex-direction: column;
+}
+
+.semki-price-block div button{
+    margin-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 445px;
+    height: 40px;
+    left: 453px;
+    top: 5157px;
+    border: 1px solid #000000;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.semki-price-block div button:hover{
+    transform:translateY(3px);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.semki-price-block h2{
+    display: block;
+    text-align: center;
+    line-height: 74px;
+    width: 511px;
+    height: 131px;
+}
+
+.semki-price-block h2 span{
+    font-size: 64px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
 }
