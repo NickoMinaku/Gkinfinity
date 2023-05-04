@@ -88,6 +88,168 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $(".semki-price-block button:first-of-type").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#semki-partnership-list")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#semki-partnership-list").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".semki-price-block button:first-of-type + button").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#semki-description")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#semki-description").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".semki-price-block button:first-of-type + button + button").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#semki-questions")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#semki-questions").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $("div.semki-deal-item:first-of-type").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#semki-call-description")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#semki-call-description").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $("div.semki-deal-item:first-of-type + div.semki-deal-item").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#semki-deal")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#semki-deal").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $("div.semki-deal-item:first-of-type + div.semki-deal-item + div.semki-deal-item").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#semki-car")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#semki-car").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $("div.semki-deal-item:first-of-type + div.semki-deal-item + div.semki-deal-item + div.semki-deal-item").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#semki-manager")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#semki-manager").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $("a.golden-cat-send-request").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-goldencat").fadeIn(297, function () {
+            $("#goldencat-send-request-form")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-goldencat").click(function () {
+        $("#goldencat-send-request-form").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-goldencat").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $("a.goldencat-spend-button").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-goldencat").fadeIn(297, function () {
+            $("#goldencat-spend-description")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-goldencat").click(function () {
+        $("#goldencat-spend-description").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-goldencat").fadeOut(297);
+        });
+    });
+});
+
 class Accordion {
     constructor(el) {
         this.el = el;

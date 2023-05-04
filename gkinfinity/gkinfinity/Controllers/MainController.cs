@@ -24,12 +24,22 @@ namespace gkinfinity.Controllers
             return View();
         }
 
+        public IActionResult GoldenCat()
+        {
+            return View();
+        }
+
+        public IActionResult MagnumWater()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> SendRequest(SendRequestModel sendrequest, string subject)
         {
             MailSendRequest sendRequest = new MailSendRequest();
             await sendRequest.SendEmailAsync(subject, sendrequest);
-            return RedirectToAction("SemkiITochka");
+            return RedirectToAction(subject);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
