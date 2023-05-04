@@ -38,6 +38,22 @@
     font-style: normal;
 }
 
+.raleway-800fw-50px-white {
+    color: var(--white);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.raleway-800fw-18px-white {
+    color: var(--white);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+}
+
 .boorsok-400fw-16px-black {
     color: var(--black);
     font-family: var(--font-boorsok), Arial, sans-serif;
@@ -112,6 +128,14 @@
 
 .raleway-900fw-18px-black {
     color: var(--black);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.raleway-900fw-18px-white {
+    color: var(--white);
     font-family: var(--font-raleway), Arial, sans-serif;
     font-size: 18px;
     font-weight: 900;
@@ -1980,11 +2004,11 @@ iframe + .goldencat-headline {
     margin-bottom: 40px;
 }
 
-h2:first-of-type{
+.mh1{
     margin-left: 274px;
 }
 
-h2:first-of-type + p{
+.mh1 + p{
     margin-bottom: 90px;
 }
 
@@ -2000,5 +2024,292 @@ h2:first-of-type + p{
 .magnum-offer div:first-of-type{
     width: 962px;
     height: 439px;
-    background-image: url(~/img/magnum-bg1.jpg);
+    background-image: url(../img/magnum-bg1.png);
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: inset 0px 0px 30px #000000;
 }
+.magnum-offer div:last-of-type{
+    width: 369px;
+    height: 439px;
+    background-image: url(../img/magnum-bg2.png);
+    box-shadow: inset 0px 0px 30px #000000;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#magnum-bottles {
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    border-radius: 10px 0px;
+}
+
+.magnum-offer h2 {
+    display: block;
+    margin-left: 404px;
+    margin-top: 27px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+.magnum-offer p {
+    width: 536px;
+    height: 236px;
+    margin-left: 404px;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+.magnum-offer + h2{
+    display: block;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.magnum-about{
+    padding-left: 107px;
+    width: 1003px;
+    height: 412px
+}
+
+.magnum-about img:first-of-type{
+    float: left;
+    width: 143px;
+    height: 171px;
+}
+
+.magnum-about p:first-of-type{
+    flex-flow: nowrap;
+    width: 741px;
+    height: 176px;
+    margin-left: 117px;
+    float: left;
+}
+
+.magnum-about img:last-of-type{
+    margin-top: 63px;
+    width: 143px;
+    height: 158px;
+    float: left;
+}
+
+.magnum-about p:last-of-type{
+    flex-flow: nowrap;
+    width: 741px;
+    height: 176px;
+    margin-left: 117px;
+    margin-top: 40px;
+    float: left;
+    clear: right;
+}
+
+.inside-partnership {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 20px;
+    overflow: hidden;
+    display: block;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    width: 1110px;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: inset 0px 0px 30px #000000;
+    background-image: url(../img/magnum-bg3.png);
+}
+
+.inside-partnership h2{
+    display: block;
+    margin-left: 40px;
+}
+
+.inside-partnership-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+    width: 1030px;
+    min-height: 260px;
+}
+
+.magnum-details {
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    width: 484px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.01);
+    border: 1px solid #FFFFFF;
+    box-shadow: inset 0px 0px 5px #FFFFFF;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding-left: 30px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+
+.magnum-details-summary
+{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    line-height: 20px;
+    width: 424px;
+}
+
+.magnum-details div {
+    position: absolute;
+    top: 4px;
+    left: -26px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.magnum-details-content {
+    display: block;
+    width: 424px;
+}
+
+#dark-overlay-magnum {
+    z-index: 37;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+#magnum-popup-cross {
+    position: absolute;
+    top: 38px;
+    left: 898px;
+    cursor: pointer;
+    display: block;
+}
+
+#send-request-button-magnum {
+    margin-left: 308px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 492px;
+    height: 99px;
+    background: #000000;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#send-request-button-magnum + h2 + p{
+    width: 789px;
+    height: 53px;
+    margin-bottom: 40px;
+}
+
+.advantages-magnum{
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    height: 456px;
+}
+
+.advantages-buttons{
+    width: 593px;
+    height: 456px;
+}
+
+.advantages-text {
+    box-sizing: border-box;
+    width: 426px;
+    height: 456px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.advantages-bt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 25px;
+    width: 593px;
+    height: 48px;
+    background: #000000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.advantages-text{
+    padding: 15px;
+}
+
+.advantages-text p{
+    display: none;
+}
+
+.p1 #p1{
+    display: inline;
+}
+
+.p2 #p2 {
+    display: inline;
+}
+
+.p3 #p3 {
+    display: inline;
+}
+
+.p4 #p4 {
+    display: inline;
+}
+
+.p5 #p5 {
+    display: inline;
+}
+
+.p6 #p6 {
+    display: inline;
+}
+
+.p7 #p7 {
+    display: inline;
+}
+
+.magnum-video-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-left: -405px;
+    width: 1920px;
+}
+
+.magnum-video {
+    box-sizing: border-box;
+    width: 1252px;
+    height: 510px;
+    background: url(../img/magnum-bg4.png);
+    border-radius: 0px 10px 10px 0px;
+    padding: 24px;
+    padding-left: 0;
+    background: url(../img/magnum-bg4.png);
+}
+
+.magnum-video iframe{
+    margin-left: 406px;
+    border-radius: 10px;
+}
+
+.magnum-video + img{
+    margin-left: 112px;
+}
+
+.magnum-video-logo + h2{
+    width: 763px;
+}
+

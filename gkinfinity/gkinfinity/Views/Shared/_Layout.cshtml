@@ -10,9 +10,18 @@
 </head>
 <body>
     <div class="wrapper">
-        <main role="main" class="main">
-            @RenderBody()
-        </main>
+        @if (ViewData["Title"].ToString() == "MagnumWater")
+        {
+            <main role="main" class="main" style="max-width: 1110px">
+                @RenderBody()
+            </main>
+        }
+        else
+        {
+            <main role="main" class="main">
+                @RenderBody()
+            </main>
+        }
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

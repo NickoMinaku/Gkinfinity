@@ -250,6 +250,80 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $("div.send-request").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-magnum").fadeIn(297, function () {
+            $("#send-request-form")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#magnum-popup-cross, #dark-overlay-magnum").click(function () {
+        $("#send-request-form").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-magnum").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $("#advantages-bt1").click(function (event) {
+        event.preventDefault();
+        num = Array.from(document.querySelector('.advantages-text').classList)[Array.from(document.querySelector('.advantages-text').classList).length - 1];
+        document.querySelector('.advantages-text').classList.replace(num,'p1');
+    });
+});
+
+$(document).ready(function () {
+    $("#advantages-bt2").click(function (event) {
+        event.preventDefault();
+        num = Array.from(document.querySelector('.advantages-text').classList)[Array.from(document.querySelector('.advantages-text').classList).length - 1];
+        document.querySelector('.advantages-text').classList.replace(num, 'p2');
+    });
+});
+
+$(document).ready(function () {
+    $("#advantages-bt3").click(function (event) {
+        event.preventDefault();
+        num = Array.from(document.querySelector('.advantages-text').classList)[Array.from(document.querySelector('.advantages-text').classList).length - 1];
+        document.querySelector('.advantages-text').classList.replace(num, 'p3');
+    });
+});
+
+$(document).ready(function () {
+    $("#advantages-bt4").click(function (event) {
+        event.preventDefault();
+        num = Array.from(document.querySelector('.advantages-text').classList)[Array.from(document.querySelector('.advantages-text').classList).length - 1];
+        document.querySelector('.advantages-text').classList.replace(num, 'p4');
+    });
+});
+
+$(document).ready(function () {
+    $("#advantages-bt5").click(function (event) {
+        event.preventDefault();
+        num = Array.from(document.querySelector('.advantages-text').classList)[Array.from(document.querySelector('.advantages-text').classList).length - 1];
+        document.querySelector('.advantages-text').classList.replace(num, 'p5');
+    });
+});
+
+$(document).ready(function () {
+    $("#advantages-bt6").click(function (event) {
+        event.preventDefault();
+        num = Array.from(document.querySelector('.advantages-text').classList)[Array.from(document.querySelector('.advantages-text').classList).length - 1];
+        document.querySelector('.advantages-text').classList.replace(num, 'p6');
+    });
+});
+
+$(document).ready(function () {
+    $("#advantages-bt7").click(function (event) {
+        event.preventDefault();
+        num = Array.from(document.querySelector('.advantages-text').classList)[Array.from(document.querySelector('.advantages-text').classList).length - 1];
+        document.querySelector('.advantages-text').classList.replace(num, 'p7');
+    });
+});
+
 class Accordion {
     constructor(el) {
         this.el = el;
@@ -285,6 +359,44 @@ class Accordion {
     }
 }
 
+class Accordion2 {
+    constructor(el) {
+        this.el = el;
+        this.isAnimating = false;
+        $(el).click(function (event) {
+            event.preventDefault();
+            if (this.className == "magnum-details raleway-900fw-18px-white off" && !this.isAnimating) {
+                $(this).toggleClass("off");
+                $(this).toggleClass("on");
+                this.isAnimating = true;
+                $(this).animate({
+                    height: `${$(this).get(0).scrollHeight + 15}px`
+                }, "fast", function () {
+                    this.isAnimating = false;
+                });
+            }
+            else if (this.className == "magnum-details raleway-900fw-18px-white on" && !this.isAnimating) {
+                event.preventDefault();
+                $(this).toggleClass("off");
+                $(this).toggleClass("on");
+                this.isAnimating = true;
+                $(this).animate({
+                    height: "60px"
+                }, "fast", function () {
+                    this.isAnimating = false;
+                });
+            }
+
+        });
+
+
+    }
+}
+
 document.querySelectorAll('.semki-details').forEach(el => {
     new Accordion(el)
+})
+
+document.querySelectorAll('.magnum-details').forEach(el => {
+    new Accordion2(el)
 })
