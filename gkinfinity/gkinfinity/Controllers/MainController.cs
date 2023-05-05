@@ -34,6 +34,11 @@ namespace gkinfinity.Controllers
             return View();
         }
 
+        public IActionResult LifeWater()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> SendRequest(SendRequestModel sendrequest, string subject)
         {

@@ -269,6 +269,42 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    $(".magnum-send-request-block div button:first-of-type").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-magnum").fadeIn(297, function () {
+            $("#magnum-whatinside-popup")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#magnum-popup-cross, #dark-overlay-magnum").click(function () {
+        $("#magnum-whatinside-popup").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-magnum").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".magnum-send-request-block div button:last-of-type").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-magnum").fadeIn(297, function () {
+            $("#magnum-questions")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#magnum-popup-cross, #dark-overlay-magnum").click(function () {
+        $("#magnum-questions").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-magnum").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
     $("#advantages-bt1").click(function (event) {
         event.preventDefault();
         num = Array.from(document.querySelector('.advantages-text').classList)[Array.from(document.querySelector('.advantages-text').classList).length - 1];
@@ -321,6 +357,78 @@ $(document).ready(function () {
         event.preventDefault();
         num = Array.from(document.querySelector('.advantages-text').classList)[Array.from(document.querySelector('.advantages-text').classList).length - 1];
         document.querySelector('.advantages-text').classList.replace(num, 'p7');
+    });
+});
+
+$(document).ready(function () {
+    $(".magnum-partnership .card-info:nth-of-type(1) button").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-magnum").fadeIn(297, function () {
+            $("#semki-call-description")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-magnum").click(function () {
+        $("#semki-call-description").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-magnum").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".magnum-partnership .card-info:nth-of-type(2) button").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-magnum").fadeIn(297, function () {
+            $("#semki-deal")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-magnum").click(function () {
+        $("#semki-deal").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-magnum").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".magnum-partnership .card-info:nth-of-type(3) button").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-magnum").fadeIn(297, function () {
+            $("#semki-car")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-magnum").click(function () {
+        $("#semki-car").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-magnum").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".magnum-partnership .card-info:nth-of-type(4) button").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-magnum").fadeIn(297, function () {
+            $("#semki-manager")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-magnum").click(function () {
+        $("#semki-manager").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-magnum").fadeOut(297);
+        });
     });
 });
 

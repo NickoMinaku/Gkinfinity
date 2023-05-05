@@ -54,6 +54,14 @@
     font-style: normal;
 }
 
+.raleway-800fw-40px-white {
+    color: var(--white);
+    font-family: var(--font-raleway), Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    font-style: normal;
+}
+
 .boorsok-400fw-16px-black {
     color: var(--black);
     font-family: var(--font-boorsok), Arial, sans-serif;
@@ -2419,4 +2427,254 @@ iframe + .goldencat-headline {
     margin-right: auto;
     text-align: center;
     display: block;
+}
+
+.magnum-send-request-block{
+    padding-left: 65px;
+    padding-right: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 1110px;
+}
+
+.magnum-send-request-block div:last-of-type{
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    width: 445px;
+    height: 94px;
+    background: #000000;
+    border-radius: 50px;
+    text-decoration: none;
+    padding-top: 23px;
+}
+
+.magnum-send-request-block div button{
+    cursor: pointer;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 380px;
+    height: 60px;
+    background: #000000;
+    border-radius: 50px;
+}
+
+.magnum-send-request-block div button:first-of-type{
+    margin-bottom: 20px;
+}
+
+#magnum-whatinside-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 750px;
+    height: 385px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#magnum-whatinside-popup h2, #magnum-whatinside-popup p {
+    display: block;
+    max-width: 700px;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#magnum-whatinside-popup h2 {
+    line-height: 15px;
+}
+
+#magnum-whatinside-popup img {
+    top: 38px;
+    left: 690px;
+}
+
+#magnum-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 953px;
+    height: 950px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#magnum-questions h2, #magnum-questions div {
+    display: block;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#magnum-questions div{
+    width: 827px;
+    height: 811px;
+    overflow-y: scroll;
+    scrollbar-color: black rgb(246, 246, 246);
+    scrollbar-arrow-color: white;
+    scrollbar-width: thin;
+    overscroll-behavior: none;
+}
+
+#magnum-questions div p{
+    width: 800px;
+}
+
+.left{
+    width:fit-content;
+    margin-right: auto;
+}
+
+.right {
+    width: fit-content;
+    margin-left: auto;
+}
+
+.magnum-footer {
+    display: flex;
+    margin-left: -405px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 90px;
+    width: 1920px;
+    height: 125px;
+    background-color: black;
+}
+
+.magnum-footer-wrapper {
+    display: flex;
+    width: 1110px;
+    height: 125px;
+    align-items: center;
+}
+
+.magnum-footer-wrapper p:first-of-type{
+    width: 200px;
+    height: 60px;
+    display: block;
+}
+
+.magnum-footer-wrapper a{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.magnum-footer-wrapper a > img{
+    margin-left: 10px;
+}
+
+.client-companies-magnum{
+    display: block;
+}
+
+.send-companies-magnum{
+    margin-left: -35px;
+}
+
+.center{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.magnum-partnership {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1920px;
+    height: 475px;
+    background: url(../img/magnum-bg5.png);
+    margin-left: -405px;
+    box-shadow: inset 0px 0px 30px #000000;
+}
+
+.magnum-partnership div:only-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height:465px;
+    width:1110px;
+}
+
+.card-info{
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
+    width: 254px;
+    height: 345px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card-info:nth-of-type(1){
+    background: url(../img/call-magnum.jpg);
+}
+.card-info:nth-of-type(2){
+    background: url(../img/hands-shake-magnum.jpg);
+}
+
+.card-info:nth-of-type(3){
+    background: url(../img/car-magnum.jpg);
+}
+
+.card-info:nth-of-type(4){
+    background: url(../img/manager-magnum.jpg);
+}
+
+.card-info p.raleway-800fw-40px-white{
+    margin-top: 198px;
+    margin-left: 10px;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+.card-info div{
+    width: 100%;
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info div p{
+    margin: 0;
+    text-align: center;
+    max-width: 149px;
+}
+
+.magnum-partnership button{
+    display: block;
+    width: 158px;
+    height: 31px;
+    text-align: center;
+    background: #000000;
+    border-radius: 10px;
+    cursor: pointer;
 }
