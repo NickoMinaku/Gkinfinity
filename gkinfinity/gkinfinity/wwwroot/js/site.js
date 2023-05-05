@@ -393,10 +393,48 @@ class Accordion2 {
     }
 }
 
+class Accordion3 {
+    constructor(el) {
+        this.el = el;
+        this.isAnimating = false;
+        $(el).click(function (event) {
+            event.preventDefault();
+            if (this.className == "raleway-900fw-18px-white magnum-details2 off" && !this.isAnimating) {
+                $(this).toggleClass("off");
+                $(this).toggleClass("on");
+                this.isAnimating = true;
+                $(this).animate({
+                    height: `${$(this).get(0).scrollHeight + 20}px`
+                }, "fast", function () {
+                    this.isAnimating = false;
+                });
+            }
+            else if (this.className == "raleway-900fw-18px-white magnum-details2 on" && !this.isAnimating) {
+                event.preventDefault();
+                $(this).toggleClass("off");
+                $(this).toggleClass("on");
+                this.isAnimating = true;
+                $(this).animate({
+                    height: "51px"
+                }, "fast", function () {
+                    this.isAnimating = false;
+                });
+            }
+
+        });
+
+
+    }
+}
+
 document.querySelectorAll('.semki-details').forEach(el => {
     new Accordion(el)
 })
 
 document.querySelectorAll('.magnum-details').forEach(el => {
     new Accordion2(el)
+})
+
+document.querySelectorAll('.magnum-details2').forEach(el => {
+    new Accordion3(el)
 })
