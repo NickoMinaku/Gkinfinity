@@ -696,17 +696,18 @@ body {
     opacity: 0;
 }
 
-#agreement+label{
-    display: inline-flex;
+#agreement+label[for="agreement"]{
+    display: flex;
     align-items: center;
     user-select: none;
     margin-right: 15px;
     cursor: pointer;
+    z-index: 5;
 }
 
-#agreement+label::before{
+#agreement+label[for="agreement"]::before{
     content: '';
-    display: inline-block;
+    display: block;
     width: 44px;
     height: 44px;
     flex-shrink: 0;
@@ -718,17 +719,17 @@ body {
     background-size: 60% 60%;
 }
 
-#agreement:checked+label::before{
+#agreement:checked+label[for="agreement"]::before{
   background-image: url(/img/mark.svg);
 }
 
 .agreement-div {
+    position: relative;
     display: flex;
     align-items: center;
     position: absolute;
     top: 473px;
     left: 38px;
-    overflow: hidden;
 }
 
 .send-request-button {
@@ -2330,6 +2331,7 @@ iframe + .goldencat-headline {
 
 .slider-el {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     width: 300px;
@@ -2348,8 +2350,7 @@ iframe + .goldencat-headline {
 .slider-el img{
     width: 119px;
     height: 158px;
-    margin-top: 8px;
-    margin-bottom: 9px;
+    margin-top: 25px;
 }
 
 .slider-el p{
@@ -2601,6 +2602,7 @@ iframe + .goldencat-headline {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .magnum-partnership {
@@ -2677,4 +2679,669 @@ iframe + .goldencat-headline {
     background: #000000;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.lifewater {
+    width: 324px;
+    height: 224px;
+    margin-top: 90px;
+    float: left;
+}
+
+.wave-waterlife {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 115px;
+    margin-left: -405px;
+    width: 1920px;
+    height: fit-content;
+    background: url(../img/wave-lifewater.svg);
+}
+
+.lifewater-main{
+    box-sizing: border-box;
+    width: 1110px;
+}
+
+.lifewater-h1 {
+    display: inline-block;
+    width: 487px;
+    height: 210px;
+    margin-left: 299px;
+    margin-top: 104px;
+    line-height: 110%;
+    float: right;
+    clear: right;
+
+    letter-spacing: 0.02em;
+    color: #124578;
+}
+
+.p1-lifewater{
+    display: block;
+    width: 550px;
+    height: 115px;
+    line-height: 20px;
+    float: left;
+    clear: right;
+}
+
+.lifewater-send-request {
+    display: flex;
+    width: 336px;
+    height: 62px;
+    margin-top: 18px;
+    margin-left: 210px;
+    background: #2C83D9;
+    border-radius: 50px;
+    float: right;
+    clear: right;
+    text-decoration: none !important;
+}
+
+.lifewater-send-request span{
+    display: block;
+    margin: auto;
+}
+
+.p{
+    margin-top: 90px;
+}
+
+.p p{
+    display: block;
+    width: 540px;
+    height: 115px;
+    float: left;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.lifewater-bottle {
+    width: 398px;
+    height: 394px;
+    margin-top: 171px;
+}
+
+.lifewater-bottle + div{
+    margin-top: 230px;
+    float: right;
+}
+
+.lifewater-bottle + div h2{
+    display: block;
+}
+
+.p2-waterlife {
+    display: block;
+    width: 690px;
+    height: 340px;
+    float: left;
+}
+
+.lifewater-bottle-icon {
+    width: 330px;
+    height: 330px;
+    float: right;
+    clear: right;
+}
+
+.stones{
+    margin-top: 50px;
+}
+
+.stones + p{
+    margin-top: 40px;
+    width: 637px;
+    height: 320px;
+    float: right;
+}
+
+.p3-waterlife {
+    width: 730px;
+    height: 100px;
+}
+
+.p3-waterlife + img{
+    margin-top: 40px;
+    margin-left: 429px;
+    width: 349px;
+    height: 331px;
+}
+
+.waterlife-details {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 600px;
+    height: 46px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.waterlife-details p{
+    color: #0165C9;
+    margin-top: 13px;
+}
+
+.waterlife-details-content {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.waterlife-about {
+    margin-top: 90px;
+    color: #0165C9 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 282px;
+}
+
+.waterlife-about-b1 p {
+    margin-top: 40px;
+    line-height: 300%;
+}
+
+.waterlife-about-b2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 601px;
+    height: 282px;
+}
+
+.lifewater-send-request2 {
+    box-sizing: border-box;
+    width: 383px;
+    height: 71px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    color: #0165C9;
+    text-align: center;
+    padding-top: 25px;
+    text-decoration: none !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.waterlife-about-b2 div:first-of-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 601px;
+    height: 178px;
+}
+
+.waterlife-about-b2 div:first-of-type div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 178px;
+    height: 178px;
+    border-radius: 100px;
+    background: url(../img/waterlife-button.svg);
+    text-align: center;
+    color: #0165C9;
+}
+
+.waterlife-about-b2 div:first-of-type div span{
+    max-width: 127px;
+}
+
+.waterlife-about-b2 div:first-of-type div:hover{
+    background: url(../img/waterlife-button2.svg);
+}
+
+#waterlife-modal1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 953px;
+    height: 446px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#waterlife-modal1 h2, #waterlife-modal1 p {
+    display: block;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#waterlife-modal1 h2 {
+    line-height: 15px;
+}
+
+#waterlife-modal1 p {
+    width: 827px;
+    height: 43px;
+}
+
+#waterlife-modal1 img {
+    left: 900px;
+    top: 38px;
+}
+
+#waterlife-modal2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 953px;
+    height: 300px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#waterlife-modal2 h2, #waterlife-modal2 p {
+    display: block;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#waterlife-modal2 h2 {
+    line-height: 15px;
+}
+
+#waterlife-modal2 p {
+    width: 827px;
+    height: 43px;
+}
+
+#waterlife-modal2 img {
+    left: 900px;
+    top: 38px;
+}
+
+#waterlife-modal3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 953px;
+    height: 300px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#waterlife-modal3 h2, #waterlife-modal3 p {
+    display: block;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#waterlife-modal3 h2 {
+    line-height: 15px;
+}
+
+#waterlife-modal3 p {
+    width: 827px;
+    height: 43px;
+}
+
+#waterlife-modal3 img {
+    left: 900px;
+    top: 38px;
+}
+
+.right{
+    margin-left: auto;
+}
+
+.waterlife-about + h2 + iframe{
+    border-radius: 10px;
+}
+
+.waterlife-price{
+    display: flex;
+    margin-left: 95px;
+    margin-top: 90px;
+    justify-content: space-between;
+    width: 825px;
+    height: 120px;
+}
+
+.waterlife-price h2{
+    display: block;
+    width: 477px;
+}
+
+.waterlife-price div {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 255px;
+    color: #0165C9;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.waterlife-price div div{
+    width: 255px;
+    height: 33px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+#waterlife-modal4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 953px;
+    height: 447px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#waterlife-modal4 h2, #waterlife-modal4 p {
+    display: block;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#waterlife-modal4 h2 {
+    line-height: 15px;
+}
+
+#waterlife-modal4 p {
+    width: 827px;
+    height: 43px;
+}
+
+#waterlife-modal4 img {
+    left: 900px;
+    top: 38px;
+}
+
+#waterlife-modal5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 953px;
+    height: 782px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#waterlife-modal5 h2, #waterlife-modal5 p {
+    display: block;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#waterlife-modal5 h2 {
+    line-height: 15px;
+}
+
+#waterlife-modal5 p {
+    width: 827px;
+    height: 43px;
+}
+
+#waterlife-modal5 img {
+    left: 900px;
+    top: 38px;
+}
+
+#waterlife-modal6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 953px;
+    height: 950px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+}
+
+#waterlife-modal6 h2, #waterlife-modal6 div {
+    display: block;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#waterlife-modal6 h2 {
+    line-height: 15px;
+}
+
+#waterlife-modal6 p {
+    width: 800px;
+    height: 43px;
+}
+
+#waterlife-modal6 img {
+    left: 900px;
+    top: 38px;
+}
+
+#waterlife-modal6 div {
+    width: 827px;
+    height: 811px;
+    overflow-y: scroll;
+    scrollbar-color: black rgb(246, 246, 246);
+    scrollbar-arrow-color: white;
+    scrollbar-width: thin;
+    overscroll-behavior: none;
+}
+
+.waterlife-partnership {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1920px;
+    height: fit-content;
+    margin-left: -405px;
+}
+
+.waterlife-partnership div:only-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    width:1110px;
+}
+
+.waterlife-partnership button{
+    display: block;
+    width: 158px;
+    height: 31px;
+    text-align: center;
+    background: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.client-companies-lifewater{
+    margin-left: 76px;
+}
+
+.lifewater-footer {
+    background: #124578;
+    margin-left:-405px;
+}
+
+.error {
+    border-color: red !important;
+    color: red;
+}
+
+label#name-error {
+    position: absolute;
+    top: -30px;
+    left: 365px;
+    font-family: var(--font-raleway);
+    width: 515px;
+    margin: 0;
+}
+
+label#phone-error {
+    position: absolute;
+    top: 55px;
+    left: 365px;
+    font-family: var(--font-raleway);
+    width: 515px;
+    margin: 0;
+}
+
+label#city-error {
+    position: absolute;
+    top: 140px;
+    left: 365px;
+    font-family: var(--font-raleway);
+    width: 515px;
+    margin: 0;
+}
+
+label#checkmark-error {
+    position: absolute;
+    top: -30px;
+    left: 2px;
+    font-family: var(--font-raleway);
+    width: 700px;
+}
+
+#policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 953px;
+    height: 950px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 40;
+}
+
+#policy h2, #policy div {
+    display: block;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+#policy div{
+    width: 827px;
+    height: 811px;
+    overflow-y: scroll;
+    scrollbar-color: black rgb(246, 246, 246);
+    scrollbar-arrow-color: white;
+    scrollbar-width: thin;
+    overscroll-behavior: none;
+}
+
+#policy div p{
+    width: 800px;
+}
+
+#policy h2 {
+    line-height: 25px;
+}
+
+#policy img {
+    left: 900px;
+    top: 38px;
+}
+
+.policy{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#overlay {
+    z-index: 39;
+    position: fixed;
+    background: rgba(0,0,0,.1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+#popup-cross {
+    position: absolute;
+    top: 38px;
+    left: 898px;
+    cursor: pointer;
+    display: block;
+}
+
+.slider-el img{
+    border-radius: 10px;
 }

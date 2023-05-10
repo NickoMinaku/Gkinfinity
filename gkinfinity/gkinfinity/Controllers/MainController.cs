@@ -2,6 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using gkinfinity.Services;
+using MailKit;
+using Microsoft.AspNetCore.Hosting.Server;
+using MailKit.Net.Smtp;
+using System.IO;
 
 namespace gkinfinity.Controllers
 {
@@ -13,7 +17,6 @@ namespace gkinfinity.Controllers
         {
             _logger = logger;
         }
-
         public IActionResult Index()
         {
             return View();

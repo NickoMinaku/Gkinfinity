@@ -35,6 +35,24 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    $("div.send-request").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#send-request-form")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#send-request-form").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
     $("div.semki-money-item:first-of-type").click(function (event) {
         event.preventDefault();
         $("#dark-overlay-semki").fadeIn(297, function () {
@@ -154,6 +172,114 @@ $(document).ready(function () {
 
     $("#semki-popup-cross, #dark-overlay-semki").click(function () {
         $("#semki-call-description").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".waterlife-about-b2 div div:nth-of-type(1)").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#waterlife-modal1")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#waterlife-modal1").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".waterlife-about-b2 div div:nth-of-type(2)").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#waterlife-modal2")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#waterlife-modal2").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".waterlife-about-b2 div div:nth-of-type(3)").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#waterlife-modal3")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#waterlife-modal3").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".waterlife-price div div:nth-of-type(1)").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#waterlife-modal4")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#waterlife-modal4").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".waterlife-price div div:nth-of-type(2)").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#waterlife-modal5")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#waterlife-modal5").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".waterlife-price div div:nth-of-type(3)").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#waterlife-modal6")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#waterlife-modal6").animate({ opacity: 0 }, 198, function () {
             $(this).css("display", "none");
             $("#dark-overlay-semki").fadeOut(297);
         });
@@ -432,6 +558,96 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $(".waterlife-partnership .card-info:nth-of-type(1) button").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#semki-call-description")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#semki-call-description").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".waterlife-partnership .card-info:nth-of-type(2) button").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#semki-deal")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#semki-deal").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".waterlife-partnership .card-info:nth-of-type(3) button").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#semki-car")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#semki-car").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".waterlife-partnership .card-info:nth-of-type(4) button").click(function (event) {
+        event.preventDefault();
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#semki-manager")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#semki-manager").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#dark-overlay-semki").fadeOut(297);
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".policy").click(function (event) {
+        event.preventDefault();
+        $("#overlay").fadeIn(297, function () {
+            $("#policy")
+                .css("display", "block")
+                .animate({ opacity: 1 }, 198);
+        });
+    });
+
+    $("#popup-cross, #overlay").click(function () {
+        $("#policy").animate({ opacity: 0 }, 198, function () {
+            $(this).css("display", "none");
+            $("#overlay").fadeOut(297);
+        });
+    });
+});
+
 class Accordion {
     constructor(el) {
         this.el = el;
@@ -535,6 +751,41 @@ class Accordion3 {
     }
 }
 
+class Accordion4 {
+    constructor(el) {
+        this.el = el;
+        this.isAnimating = false;
+        $(el).click(function (event) {
+            event.preventDefault();
+            if (this.className == "waterlife-details raleway-900fw-18px-black off" && !this.isAnimating) {
+                $(this).toggleClass("off");
+                $(this).toggleClass("on");
+                this.isAnimating = true;
+                $(this).animate({
+                    height: `${$(this).get(0).scrollHeight + 25}px`
+                }, "fast", function () {
+                    this.isAnimating = false;
+                });
+            }
+            else if (this.className == "waterlife-details raleway-900fw-18px-black on" && !this.isAnimating) {
+                event.preventDefault();
+                $(this).toggleClass("off");
+                $(this).toggleClass("on");
+                this.isAnimating = true;
+                $(this).animate({
+                    height: "50px"
+                }, "fast", function () {
+                    this.isAnimating = false;
+                });
+            }
+
+
+        });
+
+
+    }
+}
+
 document.querySelectorAll('.semki-details').forEach(el => {
     new Accordion(el)
 })
@@ -546,3 +797,53 @@ document.querySelectorAll('.magnum-details').forEach(el => {
 document.querySelectorAll('.magnum-details2').forEach(el => {
     new Accordion3(el)
 })
+
+document.querySelectorAll('.waterlife-details').forEach(el => {
+    new Accordion4(el)
+})
+
+$(document).ready(function () {
+    $(function () {
+        $('#form').validate({
+            rules: {
+                "sendrequest.Name": {
+                    required: true,
+                    minlength: 2
+                }
+                ,
+                "sendrequest.PhoneNumber": {
+                    required: true,
+                    rangelength: [10, 12],
+                    digits: true
+                }
+                ,
+                "sendrequest.City": {
+                    required: true,
+                    minlength: 2
+                }
+                ,
+                checkmark: { required: true }
+            },
+            errorPlacement: function (error, element) {
+                error.insertBefore(element);
+            }
+            ,
+            messages: {
+                "sendrequest.Name": {
+                    required: "Поле \"Имя\" обязательно к заполнению",
+                    minlength: "Введите не менее 2-х символов в поле 'Имя'"
+                },
+                "sendrequest.PhoneNumber": {
+                    required: "Поле \"Номер телефона\" обязательно к заполнению",
+                    rangelength: "Неверный формат номера",
+                    digits: "Неверный формат номера"
+                },
+                "sendrequest.City": {
+                    required: "Поле \"Город\" обязательно к заполнению",
+                    minlength: "Введите не менее 2-х символов в поле \"Город\""
+                },
+                checkmark: {required: "Пожалуйста, подтвердите согласие на обработку персональных данных"}
+            }
+        });
+    });
+});

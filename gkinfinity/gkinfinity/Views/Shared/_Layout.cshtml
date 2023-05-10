@@ -7,12 +7,13 @@
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     @*<link rel="stylesheet" href="~/gkinfinity.styles.css" asp-append-version="true" />*@
+    <link rel="shortcut icon" href="~/favico.ico" type="image/x-icon">
     <link href="/css/itc-slider.css" rel="stylesheet">
     <script src="/js/itc-slider.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
-        @if (ViewData["Title"].ToString() == "MagnumWater")
+        @if (ViewData["Title"].ToString() == "MagnumWater" || ViewData["Title"].ToString() == "LifeWater")
         {
             <main role="main" id="main" class="main" style="max-width: 1110px">
                 @RenderBody()
@@ -27,6 +28,7 @@
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     @*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

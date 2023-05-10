@@ -1,19 +1,27 @@
+using Microsoft.AspNetCore.Connections;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
+using System.Net;
+using System.Reflection.PortableExecutable;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.UseUrls("http://localhost:5077").ConfigureLogging(logging =>
+{
+    logging.AddConsole();
+    logging.AddDebug();
+});
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Main/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
 
-app.UseHttpsRedirection();
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
+
 app.UseStaticFiles();
 
 app.UseRouting();
