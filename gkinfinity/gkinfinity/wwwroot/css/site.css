@@ -33,7 +33,7 @@
 .boorsok-400fw-36px-black {
     color: var(--black);
     font-family: var(--font-boorsok), Arial, sans-serif;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     font-style: normal;
 }
@@ -41,7 +41,7 @@
 .raleway-800fw-50px-white {
     color: var(--white);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 800;
     font-style: normal;
 }
@@ -49,7 +49,7 @@
 .raleway-800fw-18px-white {
     color: var(--white);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 800;
     font-style: normal;
 }
@@ -57,7 +57,7 @@
 .raleway-800fw-40px-white {
     color: var(--white);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 800;
     font-style: normal;
 }
@@ -65,7 +65,7 @@
 .boorsok-400fw-16px-black {
     color: var(--black);
     font-family: var(--font-boorsok), Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     font-style: normal;
 }
@@ -73,7 +73,7 @@
 .boorsok-400fw-18px-black {
     color: var(--black);
     font-family: var(--font-boorsok), Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     font-style: normal;
 }
@@ -81,7 +81,7 @@
 .roboto-900fw-26px-black {
     color: var(--black);
     font-family: var(--font-roboto), Arial, sans-serif;
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 900;
     font-style: normal;
 }
@@ -89,7 +89,7 @@
 .amatic-400fw-50px-black {
     color: var(--black);
     font-family: var(--font-amatic), Arial, sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 400;
     font-style: normal;
 }
@@ -97,7 +97,7 @@
 .raleway-800fw-48px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
     font-style: normal;
 }
@@ -105,7 +105,7 @@
 .raleway-500fw-18px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     font-style: normal;
 }
@@ -113,7 +113,7 @@
 .raleway-400fw-20px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     font-style: normal;
 }
@@ -121,7 +121,7 @@
 .raleway-800fw-18px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 800;
     font-style: normal;
 }
@@ -129,7 +129,7 @@
 .raleway-900fw-85px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 85px;
+    font-size: 5.3125rem;
     font-weight: 900;
     font-style: normal;
 }
@@ -137,7 +137,7 @@
 .raleway-900fw-18px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 900;
     font-style: normal;
 }
@@ -145,15 +145,15 @@
 .raleway-900fw-18px-white {
     color: var(--white);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 900;
     font-style: normal;
 }
 
-.raleway-800fw-32px-black{
+.raleway-800fw-32px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     font-style: normal;
 }
@@ -161,7 +161,7 @@
 .raleway-800fw-50px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 800;
     font-style: normal;
 }
@@ -169,7 +169,7 @@
 .raleway-900fw-50px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 900;
     font-style: normal;
 }
@@ -177,7 +177,7 @@
 .raleway-900fw-20px-white {
     color: var(--white);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 900;
     font-style: normal;
 }
@@ -185,7 +185,7 @@
 .raleway-900fw-20px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 900;
     font-style: normal;
 }
@@ -193,7 +193,7 @@
 .raleway-900fw-32px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
     font-style: normal;
 }
@@ -201,7 +201,7 @@
 .raleway-600fw-24px-black {
     color: var(--black);
     font-family: var(--font-raleway), Arial, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     font-style: normal;
 }
@@ -209,7 +209,7 @@
 .yesevaone-400fw-20px-black {
     color: var(--black);
     font-family: var(--font-yeseva_one), Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     font-style: normal;
 }
@@ -217,7 +217,15 @@
 .aqum-400fw-50px-white {
     color: var(--white);
     font-family: var(--font-aqum), Arial, sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aqum-400fw-18px-white {
+    color: var(--white);
+    font-family: var(--font-aqum), Arial, sans-serif;
+    font-size: 1.125rem;
     font-weight: 400;
     font-style: normal;
 }
@@ -245,14 +253,36 @@ h2{
     all: unset;
 }
 
+.wrapper {
+    box-sizing: border-box;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 21.094vw;
+}
+
 .main{
     position: relative;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+}
+
+@media (max-width: 480px) {
 }
 
 html {
     position: relative;
     min-height: 100%;
-    
+    font-size: 16px;
 }
 
 body {
@@ -261,59 +291,73 @@ body {
     margin: 0px;
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 6px;
+    }
+}
+
 .hidden{
     pointer-events: none;
     display: none;
 }
 
-.wrapper {
-    box-sizing: content-box;
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 21.094vw;
-}
-
 .main-screen-header {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 1110px;
     height: 125px;
     background: linear-gradient(91.63deg, #9492FF 11.31%, #2C2A8F 89.16%);
     border-radius: 0px 0px 5px 5px;
 }
 
+
 .header-text {
-    position: absolute;
-    width: 666px;
-    height: 110px;
-    left: 223px;
-    top: 7px;
-    line-height: 55px;
+    box-sizing: border-box;
+    width: 60%;
+    height: fit-content;
+    line-height: 3.4375rem;
     letter-spacing: 0.02em;
 }
 
 .phone-icon {
-    position: absolute;
-    left: 677px;
-    top: 80px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .phone-number {
-    position: absolute;
-    width: 183px;
-    height: 23px;
-    left: 705px;
-    top: 79px;
-    font-size: 18px;
-}
-
-.phone-number a {
+    display: block;
+    float: right;
+    display: block;
+    margin-top: 18px;
+    white-space: nowrap;
     text-decoration: none;
+    line-height: normal;
     color: white;
+    letter-spacing: 0;
 }
 
-.phone-number a:hover{
+.phone-number:hover{
     text-decoration:underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
@@ -328,15 +372,14 @@ body {
 .business-block {
     box-sizing: border-box;
     display: flex;
-    align-content: center;
-    justify-content: space-between;
-    flex-direction: column;
+    justify-content: center;
     flex-flow: wrap;
-    row-gap: 50px;
+    row-gap: 35px;
+    column-gap: 35px;
     overflow: hidden;
     padding: 50px 50px;
     width: 1110px;
-    height: 658px;
+    height: fit-content;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
@@ -437,10 +480,10 @@ body {
     overflow: visible;
 }
 
-.news-bubble-text{
-    line-height: 22px;
-    position:absolute;
-    display:block;
+.news-bubble-text {
+    line-height: 1.375rem;
+    position: absolute;
+    display: block;
     width: 506px;
     height: 62px;
     top: 12px;
@@ -493,7 +536,7 @@ body {
 
 .main-screen-footer {
     position: relative;
-    width: 1110px;
+    width: 100%;
     height: 125px;
     margin-top: 90px;
     background: linear-gradient(180deg, #000000 0%, #383A42 100%);
@@ -683,7 +726,7 @@ body {
     display: inline-block;
     width: 293px;
     margin-bottom: 50px;
-    line-height: 35px;
+    line-height: 2.1875rem;
 }
 
 .form-inputs .labels{
@@ -816,7 +859,7 @@ body {
 
 .semki-block2 p {
     width: 435px;
-    line-height: 20px;
+    line-height: 1.25rem;
 }
 
 .semki-bottles {
@@ -877,7 +920,7 @@ body {
     text-align: center;
     margin-left: 20px;
     margin-top: 20px;
-    line-height: 20px;
+    line-height: 1.25rem;
 }
 
 .semki-details {
@@ -892,7 +935,7 @@ body {
     border-radius: 5px;
     text-align: center;
     letter-spacing: 0.02em;
-    line-height: 22px;
+    line-height: 1.375rem;
     margin-bottom: 15px;
     overflow: hidden;
 }
@@ -949,7 +992,7 @@ body {
     white-space: normal;
     width: 1000px;
     text-align: center;
-    line-height: 55px;
+    line-height: 3.4375rem;
 }
 
 .semki-money-block{
@@ -1061,7 +1104,7 @@ body {
 }
 
 #spend-popup h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #spend-popup img {
@@ -1076,7 +1119,7 @@ body {
 }
 
 #stonk-popup h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #stonk-popup img {
@@ -1092,7 +1135,7 @@ body {
 }
 
 #clear-popup h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #clear-popup img {
@@ -1111,7 +1154,7 @@ body {
     box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     text-align: center;
-    line-height: 20px;
+    line-height: 1.25rem;
     padding-top: 23px;
 }
 
@@ -1129,7 +1172,7 @@ body {
     width: 230px;
     height: 110px;
     letter-spacing: 0.02em;
-    line-height: 55px;
+    line-height: 3.4375rem;
     transform: rotate(-30.98deg);
     cursor: default;
 }
@@ -1142,7 +1185,7 @@ body {
     width: 248px;
     height: 98px;
     letter-spacing: 0.02em;
-    line-height: 55px;
+    line-height: 3.4375rem;
     transform: rotate(30.98deg);
     cursor: default;
 }
@@ -1203,7 +1246,7 @@ body {
 .semki-price-block h2{
     display: block;
     text-align: center;
-    line-height: 74px;
+    line-height: 4.625rem;
     width: 511px;
     height: 131px;
 }
@@ -1241,7 +1284,7 @@ body {
 }
 
 #semki-partnership-list h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #semki-partnership-list img {
@@ -1276,7 +1319,7 @@ body {
     display: block;
     margin-top: 38px;
     margin-left: 38px;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 #semki-description div {
@@ -1284,9 +1327,8 @@ body {
     height: 418px;
 }
 
-#semki-description h2 {
-    line-height: 15px;
-}
+    #semki-description h2 {
+    }
 
 #semki-description img {
     left: 900px;
@@ -1333,7 +1375,7 @@ body {
 }
 
 #semki-questions h2 {
-    line-height: 25px;
+    line-height: 1.5625rem;
 }
 
 #semki-questions img {
@@ -1512,7 +1554,7 @@ body {
 }
 
 #semki-call-description h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #semki-call-description p {
@@ -1551,7 +1593,7 @@ body {
 }
 
 #semki-deal h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #semki-deal p {
@@ -1589,7 +1631,7 @@ body {
 }
 
 #semki-car h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #semki-car p {
@@ -1627,7 +1669,7 @@ body {
 }
 
 #semki-manager h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #semki-manager p {
@@ -1696,7 +1738,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 40px;
+    line-height: 2.5rem;
     width: 405px;
     height: 96px;
     background: linear-gradient(86.78deg, #FFBA1F 0%, #FFDC03 100%);
@@ -1785,14 +1827,14 @@ iframe + .goldencat-headline {
 }
 
 .check-marks-block div p:first-of-type{
-    line-height: 20px;
+    line-height: 1.25rem;
     display: block;
     margin-left: 31px;
     margin-top: 16px;
 }
 
 .check-marks-block div p{
-    line-height: 20px;
+    line-height: 1.25rem;
     display: block;
     margin-left: 31px;
     margin-top: 61px;
@@ -1843,7 +1885,7 @@ iframe + .goldencat-headline {
 }
 
 #goldencat-spend-description h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #goldencat-spend-description p {
@@ -1913,7 +1955,7 @@ iframe + .goldencat-headline {
     padding-right: 0px;
     filter: drop-shadow(0px 0px 5px #FDB7FF);
     border-radius: 10px;
-    line-height: 20px;
+    line-height: 1.25rem;
 }
 
 .how-buy img{
@@ -1933,7 +1975,7 @@ iframe + .goldencat-headline {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 40px;
+    line-height: 2.5rem;
     width: 405px;
     height: 96px;
     background: linear-gradient(86.78deg, #FFBA1F 0%, #FFDC03 100%);
@@ -2157,11 +2199,10 @@ iframe + .goldencat-headline {
     cursor: pointer;
 }
 
-.magnum-details-summary
-{
+.magnum-details-summary {
     margin-top: 10px;
     margin-bottom: 40px;
-    line-height: 20px;
+    line-height: 1.25rem;
     width: 424px;
 }
 
@@ -2381,7 +2422,7 @@ iframe + .goldencat-headline {
     text-align: right;
     width: 433px;
     height: 175px;
-    line-height: 54px;
+    line-height: 3.375rem;
     margin-left: auto;
 }
 
@@ -2495,7 +2536,7 @@ iframe + .goldencat-headline {
 }
 
 #magnum-whatinside-popup h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #magnum-whatinside-popup img {
@@ -2710,19 +2751,18 @@ iframe + .goldencat-headline {
     height: 210px;
     margin-left: 299px;
     margin-top: 104px;
-    line-height: 110%;
+    line-height: 3.4375rem;
     float: right;
     clear: right;
-
     letter-spacing: 0.02em;
     color: #124578;
 }
 
-.p1-lifewater{
+.p1-lifewater {
     display: block;
     width: 550px;
     height: 115px;
-    line-height: 20px;
+    line-height: 1.25rem;
     float: left;
     clear: right;
 }
@@ -2852,7 +2892,7 @@ iframe + .goldencat-headline {
 
 .waterlife-about-b1 p {
     margin-top: 40px;
-    line-height: 300%;
+    line-height: 3.375rem;
 }
 
 .waterlife-about-b2{
@@ -2931,9 +2971,9 @@ iframe + .goldencat-headline {
     margin-left: 38px;
 }
 
-#waterlife-modal1 h2 {
-    line-height: 15px;
-}
+    #waterlife-modal1 h2 {
+        line-height: 0.9375rem;
+    }
 
 #waterlife-modal1 p {
     width: 827px;
@@ -2971,7 +3011,7 @@ iframe + .goldencat-headline {
 }
 
 #waterlife-modal2 h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #waterlife-modal2 p {
@@ -3010,7 +3050,7 @@ iframe + .goldencat-headline {
 }
 
 #waterlife-modal3 h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #waterlife-modal3 p {
@@ -3091,7 +3131,7 @@ iframe + .goldencat-headline {
 }
 
 #waterlife-modal4 h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #waterlife-modal4 p {
@@ -3130,7 +3170,7 @@ iframe + .goldencat-headline {
 }
 
 #waterlife-modal5 h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #waterlife-modal5 p {
@@ -3169,7 +3209,7 @@ iframe + .goldencat-headline {
 }
 
 #waterlife-modal6 h2 {
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 #waterlife-modal6 p {
@@ -3309,7 +3349,7 @@ label#checkmark-error {
 }
 
 #policy h2 {
-    line-height: 25px;
+    line-height: 1.5625rem;
 }
 
 #policy img {

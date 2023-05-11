@@ -7,11 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MailKit" Version="4.0.0" />
+    <Compile Remove="pfx\**" />
+    <Content Remove="pfx\**" />
+    <EmbeddedResource Remove="pfx\**" />
+    <None Remove="pfx\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="pfx\" />
+    <PackageReference Include="MailKit" Version="4.0.0" />
   </ItemGroup>
 
 </Project>
