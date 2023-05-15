@@ -1201,6 +1201,111 @@ body {
     z-index: 38;
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+    
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #send-request-form {
+        width: 750px;
+    }
+    .send-request-button {
+        left: 146px !important;
+    }
+    .form-inputs #name, #phone, #city{
+        width: 353px !important;
+    }
+    .form-inputs {
+        width: 675px !important;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    #send-request-form {
+        width: 475px !important;
+        height: 581px !important;
+    }
+    #send-request-form form > p{
+        margin-top: 20px !important;
+        margin-left: 10px !important;
+    }
+    .form-inputs .labels {
+        width: 242px !important;
+    }
+    .send-request-button {
+        left: 9px !important;
+        top: 451px !important;
+    }
+    .form-inputs #name, #phone, #city {
+        height: 51px !important;
+        width: 207px !important;
+    }
+    .agreement-div {
+        top: 370px !important;
+        left: 10px !important;
+    }
+    .form-inputs {
+        width: 460px !important;
+        top: 125px !important;
+        left: 10px !important;
+    }
+    #semki-popup-cross {
+        top: 37px !important;
+        left: 435px !important;
+    }
+    .send-request-button:hover {
+        transform: translateY(3px) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #send-request-form form > p {
+        margin-top: 20px !important;
+        margin-left: 10px !important;
+    }
+    #send-request-form {
+        width: 381px !important;
+        height: 455px !important;
+    }
+    .form-inputs {
+        width: 460px !important;
+        top: 80px !important;
+        left: 10px !important;
+    }
+    .form-inputs .labels{
+        width: 185px !important;
+    }
+    .form-inputs #name, #phone, #city {
+        height: 42px !important;
+        width: 178px !important;
+    }
+    .form-inputs label {
+        margin-bottom: 45px !important;
+    }
+    .agreement-div {
+        left: 10px !important;
+        top: 280px !important;
+    }
+    .agreement-div p{
+        width: 253px !important;
+    }
+    .send-request-button {
+        width: 361px !important;
+        height: 61px !important;
+        left: 9px !important;
+        top: 350px !important;
+    }
+
+    #send-request-form {
+        width: 381px !important;
+        height: 450px !important;
+    }
+
+    .send-request-button:hover{
+        transform: translateY(3px) !important;
+    }
+}
+
 #send-request-form form > p{
     margin-top: 38px;
     margin-left: 38px;
@@ -1423,6 +1528,30 @@ body {
     position: relative;
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+    .semki-main {
+        width: 990px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .semki-main {
+        width: 760px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .semki-main {
+        width: 478px;
+    }
+}
+
+@media (max-width: 480px) {
+    .semki-main {
+        width: 360px;
+    }
+}
+
 .semki-logo-main{
     width: 467px;
     height: 143px;
@@ -1454,6 +1583,54 @@ body {
     border-radius: 10px;
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+    .semki-block2 {
+        width: 831px;
+        padding: 50px 50px;
+    }
+    .semki-text2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .semki-block2 {
+        width: 750px;
+        padding: 50px 15px;
+    }
+    .semki-text2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .semki-block2 {
+        justify-content: center;
+        padding: 50px 15px;
+        width: 464px;
+        height: 470px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .semki-text2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .semki-block2 {
+        justify-content: center;
+        padding: 50px 15px;
+        width: 350px;
+        height: 470px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .semki-text2 {
+        text-align: center;
+    }
+}
+
 .semki-block1 {
     width:1110px;
     margin-top: 1170px;
@@ -1466,7 +1643,6 @@ body {
 @media (max-width: 1200px) and (min-width: 992px) {
     .semki-block1 {
         flex-wrap: wrap;
-        margin-left: -130px;
         transform: scale(90%);
     }
 }
@@ -1476,10 +1652,13 @@ body {
         width: 896px;
         flex-wrap: wrap;
         gap: 30px;
+        justify-content: center;
+        margin-top: 1000px;
     }
     .semki-logo-main{
-        margin-left: 30px;
+        margin-left: -20px;
     }
+
 }
 
 @media (max-width: 767px) and (min-width: 481px) {
@@ -1487,17 +1666,22 @@ body {
         width: 481px;
         flex-wrap: wrap;
         gap: 30px;
-        margin-left: -629px;
+        margin-top: 800px;
     }
-    
+    .semki{
+        top: 150px;
+    }
+    .semki-header{
+        top: 325px;
+    }
 }
 
 @media (max-width: 480px) {
     .semki-block1 {
-        width: 481px;
+        width: 355px;
         flex-wrap: wrap;
         gap: 30px;
-        margin-left: -629px;
+        margin-top: 600px;
     }
     .semki-logo-main {
         width: 366px;
@@ -1505,6 +1689,14 @@ body {
     }
     .semki-text1 {
         width: 361px;
+    }
+
+    .semki {
+        top: 130px;
+    }
+
+    .semki-header {
+        top: 279px;
     }
 }
 
@@ -1532,6 +1724,79 @@ body {
     justify-content: space-between;
     width: 1110px;
     height: 598px;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .semki-bottles-block {
+        transform: scale(85%);
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .semki-bottles-block {
+        width: 353px;
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .semki-bottles-block {
+        width: 353px;
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .semki-card-text {
+        width: 306px !important;
+    }
+    .long-bottle-card{
+        height: 508px !important;
+    }
+    .short-bottle-card{
+        height: 466px !important;
+    }
+    .semki-details{
+        width: 465px !important;
+    }
+    .semki-headline {
+        white-space: normal !important;
+        text-align: center !important;
+    }
+    .semki-details-content {
+        margin-left: 5px !important;
+        width: 455px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .semki-bottles-block {
+        width: 353px;
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .semki-card-text {
+        width: 306px !important;
+    }
+    .long-bottle-card {
+        height: 480px !important;
+    }
+    .short-bottle-card {
+        height: 455px !important;
+    }
+    .semki-details{
+        width: 377px !important;
+    }
+    .semki-headline {
+        white-space: normal !important;
+        text-align: center !important;
+    }
+    .semki-details-content {
+        margin-left: 35px !important;
+        width: 300px !important;
+    }
 }
 
 .long-bottle-card {
@@ -1623,6 +1888,54 @@ body {
     height: 175px;
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+    .semki-spend-block {
+        width: 1011px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .semki-spend-block {
+        width: 528px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 70px;
+        height: fit-content;
+    }
+    .semki-spend-block + p{
+        margin-left: 0px !important;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .semki-spend-block {
+        width: 528px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 70px;
+        height: fit-content;
+        justify-content: center !important;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .semki-spend-block {
+        width: 165px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        height: fit-content;
+        justify-content: center !important;
+    }
+    .semki-spend-block + p{
+        margin-left: 0px !important;
+    }
+}
+
 .semki-spend-item{
     width: 215px;
     height: 175px;
@@ -1644,6 +1957,70 @@ body {
     width: 1000px;
     text-align: center;
     line-height: 3.4375rem;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .semki-money-block {
+        width: 744px !important;
+    }
+    .semki-spend-block + p + h2 {
+        width: 750px !important;
+    }
+    .semki-money-item {
+        width: 230px !important;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .semki-money-block {
+        justify-content: center !important;
+        width: 511px !important;
+        height: 243px !important;
+        gap: 30px !important;
+        flex-wrap: wrap !important;
+        height: fit-content !important;
+    }
+    .semki-spend-block + p + h2 {
+        width: 495px !important;
+    }
+    .semki-money-item p:last-of-type {
+        margin-top: 0px !important;
+    }
+    .semki-money-item {
+        height: 225px !important;
+    }
+    .send-request2{
+        margin-top: 80px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .semki-money-block {
+        justify-content: center !important;
+        width: 511px !important;
+        height: 243px !important;
+        gap: 30px !important;
+        flex-wrap: wrap !important;
+        height: fit-content !important;
+    }
+
+    .semki-spend-block + p + h2 {
+        width: 400px !important;
+    }
+    .semki-money-item {
+        width: 230px;
+        height: 217px;
+    }
+    .semki-money-item p:last-of-type{
+        margin-top: 0px !important;
+    }
+    .send-request2 {
+        margin-top: 80px !important;
+    }
+
 }
 
 .semki-money-block{
@@ -1687,7 +2064,7 @@ body {
 }
 
 .semki-money-item:hover{
-    margin-top: 3px;
+    transform: translateY(3px);
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -1861,6 +2238,102 @@ body {
     border-radius: 10px;
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+    .how-semki {
+        left: -9px !important;
+        transform: none !important;
+    }
+
+    .process-semki {
+        left: 688px !important;
+        transform: none !important;
+    }
+
+    .semki-arrow2{
+        display: none;
+    }
+    .semki-arrow{
+        display: none;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .semki-video {
+        width: 760px;
+        height: 505px;
+    }
+    .how-semki {
+        left: -9px !important;
+        transform: rotate(0) scale(80%) !important;
+        left: -46px !important;
+    }
+
+    .process-semki {
+        left: 688px !important;
+        transform: rotate(0) scale(80%) !important;
+        left: 545px !important;
+    }
+    .semki-arrow2 {
+        display: none;
+    }
+
+    .semki-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .semki-video {
+        width: 478px;
+        height: 318px;
+    }
+    .how-semki {
+        transform: rotate(0) scale(80%) !important;
+        left: 12px !important;
+        top: 905px !important;
+        width: 264px !important;
+    }
+
+    .process-semki {
+        transform: rotate(0) scale(80%) !important;
+        left: 269px !important;
+        top: 905px !important;
+    }
+    .semki-arrow2 {
+        display: none;
+    }
+
+    .semki-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .semki-video {
+        width: 360px;
+        height: 239px;
+    }
+    .how-semki {
+        transform: rotate(0) scale(80%) !important;
+        left: 30px !important;
+        top: 973px !important;
+        width: 264px !important;
+    }
+
+    .process-semki {
+        transform: rotate(0) scale(80%) !important;
+        left: 229px !important;
+        top: 975px !important;
+    }
+    .semki-arrow2 {
+        display: none;
+    }
+
+    .semki-arrow {
+        display: none;
+    }
+}
+
 .semki-price-block{
     display: flex;
     justify-content: space-between;
@@ -1868,6 +2341,64 @@ body {
     width: 1016px;
     height: 160px;
     margin-top: 90px;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .semki-price-block {
+        justify-content: center !important;
+        width: 900px !important;
+        flex-wrap: wrap !important;
+        height: fit-content;
+        gap: 20px;
+    }
+    .semki-price-block div{
+        order: 1;
+    }
+    .semki-price-block h2{
+        order: 0;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .semki-price-block {
+        justify-content: center !important;
+        width: 900px !important;
+        flex-wrap: wrap !important;
+        height: fit-content;
+        gap: 20px;
+    }
+    .semki-price-block div{
+        order: 1;
+    }
+    .semki-price-block h2{
+        order: 0;
+    }
+    .semki-price-block div button{
+        width: 375px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .semki-price-block {
+        justify-content: center !important;
+        width: 900px !important;
+        flex-wrap: wrap !important;
+        height: fit-content;
+        gap: 20px;
+    }
+    .semki-price-block div{
+        order: 1;
+    }
+    .semki-price-block h2{
+        order: 0;
+        transform: scale(75%)
+    }
+    .semki-price-block div button{
+        width: 375px !important;
+    }
 }
 
 .semki-price-block div{
@@ -1978,8 +2509,8 @@ body {
     height: 418px;
 }
 
-    #semki-description h2 {
-    }
+#semki-description h2 {
+}
 
 #semki-description img {
     left: 900px;
@@ -2040,6 +2571,50 @@ body {
     margin-top: 50px;
     width: 1110px;
     height: 303px;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .semki-deal {
+        justify-content: center;
+        width: 600px;
+        height: 303px;
+        flex-wrap: wrap;
+        gap: 50px;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .semki-deal {
+        justify-content: center;
+        width: 600px;
+        height: 303px;
+        flex-wrap: wrap;
+        gap: 30px;
+        height: fit-content;
+    }  
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .semki-deal {
+        justify-content: center;
+        width: 283px;
+        height: 303px;
+        flex-wrap: wrap;
+        gap: 30px;
+        height: fit-content;
+    }  
+}
+
+@media (max-width: 480px) {
+    .semki-deal {
+        justify-content: center;
+        width: 283px;
+        height: 303px;
+        flex-wrap: wrap;
+        gap: 30px;
+        height: fit-content;
+    }  
 }
 
 .semki-deal-item {
@@ -2110,6 +2685,7 @@ body {
 }
 
 .send-request3 {
+    margin-left: 0 !important;
     padding-top: 23px;
     margin-top: 40px;
     width: 350px;
@@ -2140,6 +2716,83 @@ body {
 }
 .client-companies{
     margin-left: auto;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .send-companies {
+        margin-left: -11px;
+    }
+    .client-companies {
+        margin-left: 0px;
+        transform: scale(95%);
+    }
+    .semki-footer-wrapper {
+        width: 950px !important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .send-companies {
+        margin-left: -15px;
+        transform: scale(75%);
+    }
+    .client-companies {
+        margin-left: 0px;
+        transform: scale(70%);
+    }
+    .semki-headline-left{
+        white-space: normal;
+    }
+    .semki-footer-wrapper {
+        width: 730px !important;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .client-companies {
+        margin-left: 0 !important;
+        transform: scale(45%);
+    }
+    .send-companies {
+        margin-left: 0 !important;
+        transform: scale(45%);
+    }
+
+    .semki-headline-left {
+        margin-left: 0px;
+    }
+    .semki-headline-right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .semki-footer-wrapper {
+        width: 460px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .client-companies {
+        margin-left: 0 !important;
+        transform: scale(35%);
+    }
+    .send-companies {
+        margin-left: 0 !important;
+        transform: scale(35%);
+    }
+
+    .semki-headline-left {
+        margin-left: 0px;
+    }
+    .semki-headline-right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .semki-footer-wrapper p:first-of-type {
+        width: 126px;
+    }
+    .semki-footer-wrapper {
+        width: 345px !important;
+    }
 }
 
 .semki-footer {
