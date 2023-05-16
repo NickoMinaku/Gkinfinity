@@ -54,19 +54,18 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $("div.semki-money-item:first-of-type").click(function (event) {
-        event.preventDefault();
-        $("#dark-overlay-semki").fadeIn(297, function () {
-            $("#spend-popup")
-                .css("display", "block")
-                .animate({ opacity: 1 }, 198);
-        });
+            event.preventDefault();
+            $("#dark-overlay-semki").fadeIn(297, function () {
+                $("#spend-popup")
+                    .css("display", "block")
+                    .animate({ opacity: 1 }, 198);
+            });
     });
-
     $("#semki-popup-cross, #dark-overlay-semki").click(function () {
-        $("#spend-popup").animate({ opacity: 0 }, 198, function () {
-            $(this).css("display", "none");
-            $("#dark-overlay-semki").fadeOut(297);
-        });
+            $("#spend-popup").animate({ opacity: 0 }, 198, function () {
+                $(this).css("display", "none");
+                $("#dark-overlay-semki").fadeOut(297);
+            });
     });
 });
 
