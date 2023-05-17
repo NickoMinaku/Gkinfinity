@@ -342,17 +342,17 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("a.golden-cat-send-request").click(function (event) {
         event.preventDefault();
-        $("#dark-overlay-goldencat").fadeIn(297, function () {
-            $("#goldencat-send-request-form")
+        $("#dark-overlay-semki").fadeIn(297, function () {
+            $("#send-request-form")
                 .css("display", "block")
                 .animate({ opacity: 1 }, 198);
         });
     });
 
-    $("#semki-popup-cross, #dark-overlay-goldencat").click(function () {
-        $("#goldencat-send-request-form").animate({ opacity: 0 }, 198, function () {
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
+        $("#send-request-form").animate({ opacity: 0 }, 198, function () {
             $(this).css("display", "none");
-            $("#dark-overlay-goldencat").fadeOut(297);
+            $("#dark-overlay-semki").fadeOut(297);
         });
     });
 });
@@ -360,17 +360,17 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("a.goldencat-spend-button").click(function (event) {
         event.preventDefault();
-        $("#dark-overlay-goldencat").fadeIn(297, function () {
+        $("#dark-overlay-semki").fadeIn(297, function () {
             $("#goldencat-spend-description")
                 .css("display", "block")
                 .animate({ opacity: 1 }, 198);
         });
     });
 
-    $("#semki-popup-cross, #dark-overlay-goldencat").click(function () {
+    $("#semki-popup-cross, #dark-overlay-semki").click(function () {
         $("#goldencat-spend-description").animate({ opacity: 0 }, 198, function () {
             $(this).css("display", "none");
-            $("#dark-overlay-goldencat").fadeOut(297);
+            $("#dark-overlay-semki").fadeOut(297);
         });
     });
 });
