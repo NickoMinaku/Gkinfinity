@@ -3325,6 +3325,14 @@ body {
     background: linear-gradient(180deg, rgba(253, 136, 255, 0.6) 0%, rgba(217, 217, 217, 0) 100%);
 }
 
+.pink-cat {
+    position: absolute;
+    width: 535px;
+    height: 575px;
+    left: 1260px;
+    top: 2650px;
+}
+
 @media (max-width: 1200px) and (min-width: 992px) {
     .goldencat-header{
         margin-left: -465px !important;
@@ -3362,9 +3370,68 @@ body {
       left: 760px !important;
     }
 
+    .goldencat-headline + iframe {
+        margin-left: 3px !important;
+        width: 985px !important;
+    }
+
+    .check-marks-block {
+        margin-left: 0px !important;
+    }
+
+    .goldencat-spend-button {
+        margin-left: 0px !important;
+    }
+
+    .pink-cat {
+        left: 845px !important;
+    }
+
+    #sell-desc {
+        margin-left: 0px !important;
+    }
+
+    .goldencat-sell-block {
+        justify-content: center !important;
+        padding-right: 90px !important;
+        padding-left: 90px !important;
+        width: 985px !important;
+        height: 285px !important;
+        margin-left: 0px !important;
+        gap: 150px !important;
+    }
+
+    .goldencat-sell-block + .goldencat-sell-block {
+        justify-content: center !important;
+        padding-right: 90px !important;
+        padding-left: 90px !important;
+        width: 985px !important;
+        height: 295px !important;
+        margin-left: 0px !important;
+        gap: 150px !important;
+    }
+
+    .goldencat-sell-block p {
+        width: 526px !important;
+        height: 190px !important;
+    }
+
+    .goldencat-sell-block + .goldencat-sell-block p {
+        width: 512px !important;
+        height: 166px !important;
+    }
+
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
+    .goldencat-headline:first-of-type{
+        margin-top: 30px !important;
+    }
+
+    .question-mark{
+        left: 559px !important;
+    }
+
     .goldencat-header {
         margin-left: -580px !important;
         position: relative !important;
@@ -3394,7 +3461,7 @@ body {
     }
 
     .cat {
-        top: 658px !important;
+        top: 545px !important;
         z-index: -1 !important;
         left: 1001px !important;
         transform: scale(80%) !important;
@@ -3407,13 +3474,76 @@ body {
     .goldencat-headline:first-of-type + p {
          margin-left: 0px !important; 
          margin-left: 0px !important; 
+         width: 582px !important;
+         height: 230px !important;
     }
+
+    .goldencat-headline + iframe {
+      margin-left: 3px !important;
+      width: 755px !important;
+      height: 500px !important;
+    }
+
+    iframe + .goldencat-headline {
+        width: 614px !important;
+        height: 167px !important;
+    }
+
+    .check-marks-block {
+        margin-left: 0px !important;
+        transform: scale(90%);
+        margin-left: -44px !important;
+    }
+
+    .goldencat-spend-button {
+        margin-left: 0px !important;
+    }
+
+    .pink-cat {
+        width: 508px !important;
+        height: 553px !important;
+        left: 318px !important;
+        top: 2583px !important;
+        z-index: -1 !important;
+    }
+
+    #sell-desc {
+        margin-left: 0 !important;
+    }
+
+    .goldencat-sell-block {
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+        width: 750px !important;
+        height: 300px !important;
+        margin-left: 0 !important;
+    }
+
+    .goldencat-sell-block + .goldencat-sell-block {
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+        width: 750px !important;
+        height: 300px !important;
+        margin-left: 0 !important;
+    }
+
+    .goldencat-sell-block p {
+        width: 438px !important;
+        height: 227px !important;
+    }
+
+    .goldencat-sell-block + .goldencat-sell-block p {
+        width: 424px !important;
+        height: 188px !important;
+    }
+
 }
 
 @media (max-width: 767px) and (min-width: 481px) {
     .goldencat-header {
         margin-left: -721px !important;
         position: relative !important;
+        height: 950px !important;
     }
 
     .goldencat-header-logo {
@@ -3454,10 +3584,106 @@ body {
         margin-left: 0px !important;
         margin-left: 0px !important;
     }
+
+    .question-mark {
+        top: 1095px !important;
+        left: 263px !important;
+    }
+
+    .goldencat-headline:first-of-type {
+        margin-top: 0 !important;
+    }
+
     .goldencat-headline:first-of-type + p {
-        width: 443px !important;
+        width: 286px !important;
+        height: 260px !important;
         margin-left: 0px !important; 
-        margin-left: 0px !important; 
+        margin-top: 0 !important;
+    }
+
+    .goldencat-headline + iframe {
+        margin-left: 3px !important;
+        width: 472px !important;
+        height: 280px !important;
+    }
+
+    iframe + .goldencat-headline {
+        width: 614px !important;
+        height: 85px !important;
+    }
+
+    .check-marks-block {
+        margin-left: 0px !important;
+        height: 600px !important;
+    }
+
+    .goldencat-spend-button {
+        margin-left: 0px !important;
+        margin-top: 0px !important;
+    }
+
+    .check-marks-block > img:nth-child(1) {
+        height: 550px !important;
+    }
+
+    .check-marks-block div p {
+        margin-left: 18px !important;
+        margin-top: 49px !important;
+        font-size: 0.8rem !important;
+    }
+
+    .check-marks-block div p:first-of-type {
+        margin-left: 18px !important;
+        margin-top: 16px !important;
+    }
+
+    .pink-cat {
+        display: none;
+    }
+
+    #sell-desc {
+        margin-left: 0px !important;
+    }
+
+    .goldencat-sell-block {
+        justify-content: center !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width: 473px !important;
+        height: 434px !important;
+        margin-left: 0px !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .goldencat-sell-block + .goldencat-sell-block {
+        justify-content: center !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width: 473px !important;
+        height: 434px !important;
+        margin-left: 0px !important;
+        flex-direction: column !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        gap: 15px !important;
+    }
+
+    .goldencat-sell-block p {
+        width: 309px !important;
+        height: 206px !important;
+    }
+
+    .goldencat-sell-block + .goldencat-sell-block p {
+        width: 309px !important;
+        height: 182px !important;
+        order: 0 !important;
+    }
+
+    div.goldencat-sell-block:nth-child(14) > img:nth-child(2) {
+        order: -1 !important;
     }
 }
 
@@ -3465,6 +3691,7 @@ body {
     .goldencat-header {
         margin-left: -780px !important;
         position: relative !important;
+        height: 643px !important;
     }
 
     .goldencat-header-logo > img {
@@ -3494,13 +3721,76 @@ body {
         height: 74px !important;
     }
 
+    .goldencat-headline:first-of-type {
+        margin-left: -10px !important;
+    }
+
+    .question-mark {
+        top: 862px !important;
+        left: 170px !important;
+        transform: scale(60%) !important;
+    }
+
+    .goldencat-headline:first-of-type + p {
+        width: 239px !important;
+        height: 223px !important;
+        margin-left: -10px !important;
+    }
+
     .cat-icon {
-        display: none;
+        display: none !important;
     }
 
     .cat {
-        display: none;
+        display: none !important;
     }
+
+    .goldencat-headline + iframe {
+        margin-left: -9px !important;
+        width: 378px !important;
+        height: 212px !important;
+    }
+
+    .goldencat-headline {
+        margin-left: 405px !important;
+        margin-left: -10px !important;
+    }
+
+    iframe + .goldencat-headline {
+        width: 614px !important;
+        height: 85px !important;
+    }
+
+    .check-marks-block {
+        margin-left: -9px !important;
+        height: 443px !important;
+    }
+
+    .goldencat-spend-button {
+        margin-left: -9px !important;
+        margin-top: 0px !important;
+        width: 243px !important;
+        height: 55px !important;
+    }
+
+    .check-marks-block > img:nth-child(1) {
+        height: 400px !important;
+    }
+
+    .check-marks-block div p {
+        margin-left: 10px !important;
+        margin-top: 34px !important;
+        font-size: 0.8rem !important;
+    }
+
+    .check-marks-block div p:first-of-type {
+        margin-left: 10px !important;
+        margin-top: 9px !important;
+    }
+    .pink-cat {
+        display: none !important;
+    }
+
 }
 
 .goldencat-header-logo {
