@@ -10,6 +10,8 @@
 .itc-slider {
     position: relative;
     background: url(../img/slider.svg);
+    width: 1110px;
+    border-radius: 10px;
 }
 
 .itc-slider__wrapper {
@@ -28,11 +30,54 @@
 }
 
 .itc-slider__item {
-    flex: 0 0 calc(33.3333333333% - 5px);
+    flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
     height: 430px;
     user-select: none;
     will-change: transform;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .itc-slider {
+        width: 990px !important;
+    }
+    .itc-slider__item {
+        height: 365px !important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .itc-slider {
+        width: 760px !important;
+    }
+
+    .itc-slider__item {
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .itc-slider {
+        width: 478px !important;
+    }
+
+    .itc-slider__item {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .itc-slider {
+        width: 360px !important;
+    }
+
+    .itc-slider__item {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        height: 300px !important;
+    }
 }
 
 /* кнопки влево и вправо */
