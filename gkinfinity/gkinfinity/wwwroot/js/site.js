@@ -703,11 +703,20 @@ class Accordion2 {
                 $(this).toggleClass("off");
                 $(this).toggleClass("on");
                 this.isAnimating = true;
-                $(this).animate({
-                    height: "60px"
-                }, "fast", function () {
-                    this.isAnimating = false;
-                });
+                if ($(window).width() <= 480) {
+                    $(this).animate({
+                        height: "53px"
+                    }, "fast", function () {
+                        this.isAnimating = false;
+                    });
+                }
+                else {
+                    $(this).animate({
+                        height: "60px"
+                    }, "fast", function () {
+                        this.isAnimating = false;
+                    });
+                }
             }
 
         });
@@ -737,11 +746,27 @@ class Accordion3 {
                 $(this).toggleClass("off");
                 $(this).toggleClass("on");
                 this.isAnimating = true;
-                $(this).animate({
-                    height: "51px"
-                }, "fast", function () {
-                    this.isAnimating = false;
-                });
+                if ($(window).width() <= 767 && $(window).width() > 480) {
+                    $(this).animate({
+                        height: "44px"
+                    }, "fast", function () {
+                        this.isAnimating = false;
+                    });
+                }
+                else if ($(window).width() <= 480) {
+                    $(this).animate({
+                        height: "35px"
+                    }, "fast", function () {
+                        this.isAnimating = false;
+                    });
+                }
+                else { 
+                    $(this).animate({
+                        height: "51px"
+                    }, "fast", function () {
+                        this.isAnimating = false;
+                    });
+                }
             }
 
         });

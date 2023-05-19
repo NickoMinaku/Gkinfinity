@@ -27,7 +27,7 @@ namespace gkinfinity.Services
 
             using (var client = new SmtpClient())
             {
-                client.SslProtocols |= SslProtocols.Ssl3 | SslProtocols.Ssl2 | SslProtocols.Tls | SslProtocols.Tls11 | SslProtocols.Tls12;
+                client.SslProtocols |= SslProtocols.Tls | SslProtocols.Tls11 | SslProtocols.Tls12;
                 await client.ConnectAsync("smtp.mail.ru", 25, false);
                 /*await client.AuthenticateAsync("Gkinfinity@mail.ru", "a0upaTbg2egcEAdduFR5");*/
                 await client.AuthenticateAsync(new System.Net.NetworkCredential("Gkinfinity@mail.ru", "a0upaTbg2egcEAdduFR5"));
