@@ -727,6 +727,10 @@ body {
         width: 530px !important;
     }
 
+    .waterlife-about + h2 + iframe {
+        width: 990px !important;
+    }
+
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -847,6 +851,17 @@ body {
     .waterlife-about-b2 {
         gap: 20px !important;
     }
+
+    .waterlife-about + h2 + iframe {
+        width: 760px !important;
+        height: 506px !important;
+    }
+
+    .waterlife-price {
+        margin-left: 0px !important;
+        width: 760px !important;
+    }
+
 }
 
 @media (max-width: 767px) and (min-width: 481px) {
@@ -990,6 +1005,32 @@ body {
     .waterlife-about-b2 {
         align-items: center !important;
     }
+
+    .waterlife-about + h2 + iframe {
+        width: 478px !important;
+        height: 318px !important;
+    }
+
+    .waterlife-price {
+        margin-left: 0px !important;
+        width: 476px !important;
+        height: 227px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 20px !important;
+    }
+
+    .waterlife-price div div {
+        width: 245px !important;
+        height: 32px !important;
+        padding-top: 8px !important;
+    }
+
+    .waterlife-price div {
+        width: 245px !important;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -1167,6 +1208,36 @@ body {
     .waterlife-about-b1 {
         text-align: center !important;
     }
+
+    .waterlife-about + h2 + iframe {
+        width: 360px !important;
+        height: 239px !important;
+    }
+
+    .waterlife-price {
+        margin-left: 0px !important;
+        width: 361px !important;
+        height: 227px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 20px !important;
+    }
+
+    .waterlife-price div div {
+        width: 245px !important;
+        height: 32px !important;
+        padding-top: 8px !important;
+    }
+
+    .waterlife-price div {
+        width: 245px !important;
+    }
+
+    .waterlife-price h2 {
+        width: 308px !important;
+    }
+
 }
 
 .lifewater-logo {
